@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
+import Script from "next/script";
 import Head from "next/head";
 export const metadata = {
   title: "DHA Gujranwala",
@@ -16,7 +17,10 @@ export default function RootLayout({ children }) {
         <Navbar/>
         {children}
         <Footer/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+          strategy="lazyOnload"
+        />
         </body>
     </html>
   );
