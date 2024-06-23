@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { IoLogoFacebook, IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
 import Link from "next/link";
-import OutTeam from "./OutTeam";
 import Contactform from "@/components/Contactform";
 import { FaArrowUp } from "react-icons/fa6";
 export default function Home() {
@@ -35,9 +34,8 @@ export default function Home() {
     });
   };
   return (<>
-    <div>
-    <video autoPlay loop muted src="/bgvideo.mp4" className="absolute object-cover object-center md:h-auto h-[80vh] top-0 z-[-40] left-0 w-screen"></video>
-    </div>
+    <img className="w-full h-screen absolute top-0 left-0 object-cover object-center" src="https://www.dhagwa.com/Content/Images/DHA%20Office%20Complex.jpeg" alt=''/>
+    
     <main className="min-h-screen relative">
 
       <div className="socials">
@@ -59,6 +57,13 @@ export default function Home() {
           <option value="10marla">10 Marla</option>
           <option value="15marla">15 Marla</option>
           <option value="1kanal">1 Kanal</option>
+        </select>
+        <label htmlFor="pricerange" className="text-black">Price Range</label>
+        <select id="propertySize" name="propertySize" className="border rounded-md py-1   border-gray-300 p-2 ">
+          <option value="5marla">30M</option>
+          <option value="10marla">50M</option>
+          <option value="15marla">70M</option>
+          <option value="1kanal">100M</option>
         </select>
         <button className="text-white bg-gray-700 hover:bg-black hover:text-white px-4 py-1 rounded">Search</button>
       </div>
@@ -100,7 +105,6 @@ export default function Home() {
       {/* contact from */}
       <Contactform/>
       {/* contact from */}
-      <OutTeam />
 
     </main>
 

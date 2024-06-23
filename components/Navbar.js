@@ -1,6 +1,7 @@
 'use client'
 import "./Navbar.css"
 import { RiMenu3Line } from "react-icons/ri";
+import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
@@ -11,7 +12,7 @@ const Navbar = () => {
   const [DropDown, setDropDown] = useState(false)
   const router = useRouter()
   return (
-    <div className='text-center bg-[rgba(255,255,255,0.6)] sticky top-0 py-2 px-4 grid md:place-items-center place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
+    <div className='text-center backdrop-blur-sm bg-[rgba(255,255,255,0.9)] sticky top-0 py-2 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
 
 
       <div onClick={() => router.push('/')} className="md:text-3xl text-2xl cursor-pointer underline-offset-4 navbar-name">
@@ -19,16 +20,17 @@ const Navbar = () => {
       </div>
 
 
-      <div className="md:flex gap-4 hidden">
+      <div className="md:flex place-self-center gap-0 hidden">
         <div className="px-2 py-1 rounded-lg ">
           <button
             id="dropdownHoverButton"
             data-dropdown-toggle="dropdownHover"
             data-dropdown-trigger="hover"
-            className="getquote"
+            className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
             type="button"
           >
-            Projects
+          <span>Projects</span>
+          <span><IoIosArrowDown /></span>
           </button>
           {/* Dropdown menu */}
           <div
@@ -44,7 +46,7 @@ const Navbar = () => {
                   href="#"
                   className="block hover:cursor-pointer px-4 py-2 hover:bg-gray-100"
                 >
-                  Latest Launches
+                  Upcoming
                 </a>
               </li>
               <li>
@@ -52,7 +54,7 @@ const Navbar = () => {
                   href="#"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
-                  Ongoing Projects
+                  Ongoing
                 </a>
               </li>
               <li>
@@ -60,25 +62,30 @@ const Navbar = () => {
                   href="#"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
-                  Upcoming Projects
+                  Delivered
                 </a>
               </li>
-
             </ul>
           </div>
 
 
         </div>
 
-        <button className="getquote px-2 py-1 rounded-lg md:block hidden">
-          About
+        <button className="getquote hover:-translate-y-[1px] transition-all px-2 py-1 rounded-lg hidden md:flex justify-center items-center">
+          <span>DHA Assist</span>
+          <span><IoIosArrowDown /></span>
         </button>
-        <button className="getquote px-2 py-1 rounded-lg md:block hidden">
+        <a href="/aboutus" className="getquote hover:-translate-y-[1px] transition-all px-2 py-1 rounded-lg md:flex justify-center items-center hidden">
+        <span>About Us</span>
+        <span><IoIosArrowDown /></span>
+        </a>
+        <button className="getquote hover:-translate-y-[1px] transition-all px-2 py-1 rounded-lg md:block hidden">
           Media
         </button>
       </div>
 
-      <div className="contact md:flex hidden gap-2">
+      <div className="contact place-self-center md:flex hidden gap-1">
+        <button className="px-2 flex gap-1 justify-center items-center bg-green-800 hover:text-white transition-all duration-300 py-1 text-white border hover:bg-green-900 border-green-600">Become JV Partner</button>
         <button className="px-2 py-1 border border-green-600 hover:bg-green-500 hover:text-white transition-all duration-300 flex gap-1 justify-center items-center"><span><IoCallSharp /></span><span>Contact us</span></button>
         <button className="px-2 flex gap-1 justify-center items-center hover:bg-green-700 hover:text-white transition-all duration-300 py-1 border border-green-600"><span><FaWhatsapp /></span><span>Whatsapp</span></button>
       </div>
@@ -89,8 +96,9 @@ const Navbar = () => {
           <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">{DropDown ? <RxCross1 className="text-white" /> : <RiMenu3Line />}</span>
           <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white`}>
             <li><Link onClick={() => setDropDown(!DropDown)} href={"#projects"}>Projects</Link></li>
-            <li><Link onClick={() => setDropDown(!DropDown)} href={"#contact"}>Contact</Link></li>
-            <li><Link onClick={() => setDropDown(!DropDown)} href={"#quote"}>Get Quote</Link></li>
+            <li><Link onClick={() => setDropDown(!DropDown)} href={"#contact"}>DHA Assist</Link></li>
+            <li><Link onClick={() => setDropDown(!DropDown)} href={"#quote"}>About</Link></li>
+            <li><Link onClick={() => setDropDown(!DropDown)} href={"#quote"}>Media</Link></li>
           </ul>
         </div>
       </div>
