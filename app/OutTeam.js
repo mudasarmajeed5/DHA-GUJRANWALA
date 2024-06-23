@@ -9,7 +9,7 @@ const OutTeam = () => {
                     <h1 className='text-green-700 text-3xl text-center my-5'>ABOUT US</h1>
                     <span>
 
-                        Welcome to DHA Gujranwala, where modern living meets historical significance in the heart of the Golden Triangle. Strategically located and connected via economic artery of Pakistan, we're committed to reshaping welfare regime & regional living through sustainable development and urban planning. Offering both residential and business opportunities, our meticulously designed community emphasizes smart living and sustainability. Join us in celebrating excellence and embracing a brighter, sustainable future with DHA Gujranwala.</span></div>
+                        Welcome to DHA Gujranwala, where modern living meets historical significance in the heart of the Golden Triangle. Strategically located and connected via economic artery of Pakistan, were committed to reshaping welfare regime & regional living through sustainable development and urban planning. Offering both residential and business opportunities, our meticulously designed community emphasizes smart living and sustainability. Join us in celebrating excellence and embracing a brighter, sustainable future with DHA Gujranwala.</span></div>
             </div>
             <section className="text-black body-font">
   <div className="container px-5 py-24 mx-auto">
@@ -19,7 +19,7 @@ const OutTeam = () => {
       </h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
         Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-        gentrify, subway tile poke farm-to-table. Franzen you probably haven't
+        gentrify, subway tile poke farm-to-table. Franzen you probably havent
         heard of them.
       </p>
     </div>
