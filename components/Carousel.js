@@ -1,5 +1,5 @@
 "use client"
-import "./carousel.css";
+import "./Carousel.css";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import React, { useState, useEffect } from "react";
 const Carousel = () => {
