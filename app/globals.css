@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --text-color:black;
+  --rich-black:#0d1317;
+}
+.socials {
+  position: fixed;
+  bottom: 10%;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.socials button{
+  position: relative;
+  right: -85px;
+  transition: all 0.2s ease;
+}
+.socials button:hover{
+  background-color: black;
+}

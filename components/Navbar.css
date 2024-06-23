@@ -1,0 +1,84 @@
+@keyframes increaseHeight {
+    100% {
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--rich-black);
+    }
+}
+
+.navbar-name {
+    font-family: "Signika", sans-serif;
+}
+
+.getquote {
+    transition: 0.2s ease color,.2s ease text-underline-offset;
+    
+}
+
+.getquote:hover {
+    color: var(--non-photo-blue);
+    color: green;
+}
+
+.HamBurger_DropDown {
+    position: absolute;
+    width: 0vw;
+    height: 0vh;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    font-size: 1rem;
+    gap: 10px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: .3s cubic-bezier(0.165, 0.84, 0.44, 1) increaseHeight forwards;
+}
+
+/* Navbar buttons for PC */
+.vertical-buttons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vertical-buttons button {
+    white-space: nowrap;
+    writing-mode: vertical-lr;
+    background-color: var(--slate-blue);
+    color: white;
+    padding: 12px 4px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.vertical-buttons button:hover {
+    transform: translateX(5%);
+}
+
+.socials {
+    position: fixed;
+    bottom: 10%;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.socials button{
+    position: relative;
+    right: -95px;
+    transition: all 0.2s ease;
+}
+
+@media only screen and (min-width:767px) {
+    .vertical-buttons {
+        display: flex;
+    }
+}
