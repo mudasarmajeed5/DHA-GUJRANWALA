@@ -1,9 +1,10 @@
 'use client'
 import { useState, useEffect } from "react";
-import { IoLogoFacebook, IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
+import { IoLogoWhatsapp } from "react-icons/io5";
 import Link from "next/link";
 import Contactform from "@/components/Contactform";
 import { FaArrowUp } from "react-icons/fa6";
+import Carousel from "@/components/Carousel";
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
   const [showMobileDiv, setShowMobileDiv] = useState(false);
@@ -34,18 +35,15 @@ export default function Home() {
     });
   };
   return (<>
-    <img className="w-full h-screen absolute top-0 left-0 object-cover object-center" src="https://www.dhagwa.com/Content/Images/DHA%20Office%20Complex.jpeg" alt=''/>
-    
+    {/* <img className="w-full h-screen absolute top-0 left-0 object-cover object-center" src="https://www.dhagwa.com/Content/Images/DHA%20Office%20Complex.jpeg" alt=''/> */}
+    <Carousel/>
     <main className="min-h-screen relative">
 
-      <div className="socials">
-        <button className="rounded-md bg-gray-700 hover:bg-black text-white p-1 hover:right-0 flex gap-2"><span className="text-2xl"><IoLogoInstagram /></span><Link href={'#'} className="show-text">Instagram</Link></button>
-        <button className="rounded-md bg-gray-700 hover:bg-black text-white p-1 hover:right-0 flex gap-2"><span className="text-2xl"><IoLogoFacebook /></span><Link href={'#'} className="show-text">Facebook</Link></button>
-        <button className="rounded-md bg-gray-700 hover:bg-black text-white p-1 hover:right-0 flex gap-2"><span className="text-2xl"><IoLogoWhatsapp /></span><Link href={'#'} className="show-text">Whatsapp</Link></button>
-      </div>
+        <button className="fixed rounded-md hover:text-white transition-all duration-300 hover:bg-green-500 p-1 right-2 bottom-2 text-5xl text-green-500 z-20"><IoLogoWhatsapp /></button>
+      
 
 
-      <div className="hidden rounded-full ml-[2vw] mt-[65vh] md:flex max-w-fit flex-row gap-4 py-4 bg-[#ffffff52] w-60vw justify-start px-8 items-center">
+      <div className="hidden rounded-full ml-[2vw] mt-[-20vh] md:flex max-w-fit flex-row gap-4 py-4 bg-[#ffffffa8] w-60vw justify-start px-8 items-center">
         <label htmlFor="propertyType" className="text-black">Property Type</label>
         <select id="propertyType" name="propertyType" className="border rounded-md py-1   border-gray-300 p-2">
           <option value="residential">Residential</option>
@@ -69,11 +67,10 @@ export default function Home() {
       </div>
 
       {/* Gallery */}
-      <section className="text-gray-700 md:mt-[25vh] mt-[80vh] body-font">
-        <div className="container px-5 py-24 mx-auto flex flex-wrap">
-          <div className="flex w-full mb-20 flex-wrap">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-black lg:w-1/3 lg:mb-0 mb-4">Master Cleanse Reliac Heirloom</h1>
-            <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably havent heard of them man bun deep jianbing selfies heirloom.</p>
+      <section className="text-gray-700 mt-[10vh] md:mt-[20vh] body-font">
+        <div className="container px-5 mx-auto flex flex-wrap">
+          <div className="flex w-full flex-wrap">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-black lg:w-1/3 lg:mb-0 mb-4">Media Gallery</h1>
           </div>
           <div className="flex flex-wrap md:-m-2 -m-1">
             <div className="flex flex-wrap w-1/2">
@@ -114,14 +111,14 @@ export default function Home() {
     {showButton && (
       <div
         onClick={scrollToTop}
-        className='fixed bottom-2 right-2 z-50 bg-gray-800 text-white p-3 rounded-full cursor-pointer shadow-lg'
+        className='fixed bottom-4 left-2 z-50 border border-black p-3 rounded-full cursor-pointer shadow-lg'
       >
-        <span className="text-white bg-black"><FaArrowUp /></span>
+        <span className="text-black"><FaArrowUp /></span>
       </div>)
     }
     {/* Search categories of homes */}
     {showMobileDiv && (
-      <div className='z-10 fixed bottom-0 left-0 w-full flex justify-around py-4 md:hidden bg-white'>
+      <div className='z-10 fixed bottom-0 left-0 w-full flex justify-center gap-4 py-4 md:hidden bg-white'>
         <button onClick={toggleSearchDiv} className='bg-white text-black border border-black px-4 py-2'>
           {showSearchDiv ? 'Close menu' : 'Explore categories'}
         </button>
@@ -147,6 +144,13 @@ export default function Home() {
           <option value="10marla">10 Marla</option>
           <option value="15marla">15 Marla</option>
           <option value="1kanal">1 Kanal</option>
+        </select>
+        <label htmlFor="pricerange" className="text-white">Price Range</label>
+        <select id="propertySize" name="propertySize" className="border rounded-md py-1 bg-black p-2 ">
+          <option value="5marla">30M</option>
+          <option value="10marla">50M</option>
+          <option value="15marla">70M</option>
+          <option value="1kanal">100M</option>
         </select>
         <button className="bg-blue-500 hover:bg-white text-white hover:text-black font-bold py-2 px-4 rounded">Search</button>
 

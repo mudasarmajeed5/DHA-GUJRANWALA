@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contactform = () => {
   return (
-    <section className='flex md:flex-row flex-col items-center justify-around py-16 bg-gray-200'>
+    <section className='flex md:flex-row flex-col items-center justify-around py-16'>
         <div className='text-4xl text-green-700'>Contact Us</div>
         <div>
         <form className="max-w-md mx-auto">
