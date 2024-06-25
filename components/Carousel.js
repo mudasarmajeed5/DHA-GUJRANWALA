@@ -13,15 +13,15 @@ const Carousel = () => {
             },
             {
                 "id" : "2",
-                "src": "https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2019/06/cover-image-51.jpg",
+                "src": "https://i.pinimg.com/originals/6d/20/ca/6d20caa0166fcea0555d55706fedeed0.jpg",
                 "alt": "Unstitched Cotton",
                 "text": ""
             },
             {
                 "id" : "3",
-                "src": "https://brilliantestate.pk/wp-content/uploads/2023/12/House-For-Sale-2.jpg",
+                "src": "https://png.pngtree.com/background/20230618/original/pngtree-luxurious-home-design-with-garage-a-3d-rendering-picture-image_3758650.jpg",
                 "alt": "Makeup",
-                "text": "Villas"
+                "text": ""
             }
         ]
     }

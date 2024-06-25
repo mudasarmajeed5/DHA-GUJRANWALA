@@ -6,7 +6,7 @@ import { FaArrowUp } from "react-icons/fa6";
 import Carousel from "@/components/Carousel";
 import DownloadApp from "@/components/DownloadApp";
 import MultiImageSlider from "@/components/MultiImageSlider";
-import Gallery from "@/components/Gallery";
+
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
   const [showMobileDiv, setShowMobileDiv] = useState(false);
@@ -74,8 +74,9 @@ export default function Home() {
         FEATURED COMMUNITIES</h1></div>
       <MultiImageSlider/>
       </div>
-      <Gallery/>
+      {/* <Gallery/> */}
       <DownloadApp/>
+      <div className="bg-gray-700 border mt-10 mb-5"></div>
       <Contactform/>
       {/* contact from */}
 
