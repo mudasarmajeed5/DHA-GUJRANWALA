@@ -54,20 +54,20 @@ const DownloadApp = () => {
                 <div className="playstore">
                     <h1 className="text-3xl text-center m-2 py-4">Download our App to connect with us</h1>
                     {/* Downloadable icons */}
-                    <ul className="flex gap-4 rounded-md bg-gray-300 max-w-fit mx-auto justify-center">
-                        <li className="flex items-center hover:bg-gray-400 p-2 px-5 hover:cursor-pointer transition-all gap-2">
+                    <ul className="flex gap-1 md:gap-4 rounded-md bg-gray-300 max-w-fit mx-auto justify-center">
+                        <li className="flex items-center hover:bg-gray-400 p-1 md:px-5 px-2 hover:cursor-pointer transition-all gap-2">
                             <span>
                                 <BiLogoPlayStore size={24} />
                             </span>
                             <span>Playstore</span>
                         </li>
-                        <li className="flex items-center hover:bg-gray-400 p-2 px-5 hover:cursor-pointer transition-all gap-2">
+                        <li className="flex items-center hover:bg-gray-400 p-1 md:px-5 px-2 hover:cursor-pointer transition-all gap-2">
                             <span>
                                 <IoLogoAppleAppstore size={24} />
                             </span>
                             <span>Applestore</span>
                         </li>
-                        <li className="flex items-center hover:bg-gray-400 p-2 px-5 hover:cursor-pointer transition-all gap-2">
+                        <li className="flex items-center hover:bg-gray-400 md:px-5 p-1 px-2 hover:cursor-pointer transition-all gap-2">
                             <span>
                                 <IoLogoWindows size={24} />
                             </span>
