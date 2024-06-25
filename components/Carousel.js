@@ -9,17 +9,17 @@ const Carousel = () => {
                 "id" : "1",
                 "src": "https://www.dhagwa.com/Content/Images/DHA%20Office%20Complex.jpeg",
                 "alt": "LipGloss",
-                "text": "Commerical"
+                "text": ""
             },
             {
                 "id" : "2",
-                "src": "https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2020/11/Cover-1440x625-1-1.jpg",
+                "src": "https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2019/06/cover-image-51.jpg",
                 "alt": "Unstitched Cotton",
-                "text": "Apartments"
+                "text": ""
             },
             {
                 "id" : "3",
-                "src": "https://content-cdn.zameen.com/Enem_Holdings_DHA_Gujranwala_About_projects_8974ee4a01.jpg",
+                "src": "https://brilliantestate.pk/wp-content/uploads/2023/12/House-For-Sale-2.jpg",
                 "alt": "Makeup",
                 "text": "Villas"
             }
@@ -51,7 +51,6 @@ const Carousel = () => {
                         <img src={image.src} draggable={false} alt={image.alt} key={image.id} className={`${slide == index ? "slide" : "slide slide-hidden"} object-cover md:w-[93vw] object-center h-[80vh]`} ></img>
                         <div className={`${slide == index ? "slide Carouseltext" : "slide slide-hidden"} flex w-full flex-col md:items-end items-center md:gap-0 gap-5 px-10 `}>
                             <div className="text-white md:text-2xl text-4xl font-mono font-bold">{image.text}</div>
-                            <button className=" bg-blue-800 text-white text-2xl md:text-sm px-2 py-1">View Details</button>
                         </div>
                     </div>
                 )

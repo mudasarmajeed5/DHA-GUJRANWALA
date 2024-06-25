@@ -1,10 +1,12 @@
 'use client'
 import { useState, useEffect } from "react";
 import { IoLogoWhatsapp } from "react-icons/io5";
-import Link from "next/link";
 import Contactform from "@/components/Contactform";
 import { FaArrowUp } from "react-icons/fa6";
 import Carousel from "@/components/Carousel";
+import DownloadApp from "@/components/DownloadApp";
+import MultiImageSlider from "@/components/MultiImageSlider";
+import Gallery from "@/components/Gallery";
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
   const [showMobileDiv, setShowMobileDiv] = useState(false);
@@ -35,7 +37,6 @@ export default function Home() {
     });
   };
   return (<>
-    {/* <img className="w-full h-screen absolute top-0 left-0 object-cover object-center" src="https://www.dhagwa.com/Content/Images/DHA%20Office%20Complex.jpeg" alt=''/> */}
     <Carousel/>
     <main className="min-h-screen relative">
 
@@ -43,7 +44,7 @@ export default function Home() {
       
 
 
-      <div className="hidden rounded-full ml-[2vw] mt-[-20vh] md:flex max-w-fit flex-row gap-4 py-4 bg-[#ffffffa8] w-60vw justify-start px-8 items-center">
+      <div className="hidden rounded-full mt-[-20vh] md:flex max-w-fit flex-row gap-4 py-4 bg-[#ffffffa8] mx-auto w-60vw justify-start px-8 items-center">
         <label htmlFor="propertyType" className="text-black">Property Type</label>
         <select id="propertyType" name="propertyType" className="border rounded-md py-1   border-gray-300 p-2">
           <option value="residential">Residential</option>
@@ -66,40 +67,15 @@ export default function Home() {
         <button className="text-white bg-gray-700 hover:bg-black hover:text-white px-4 py-1 rounded">Search</button>
       </div>
 
-      {/* Gallery */}
-      <section className="text-gray-700 mt-[10vh] md:mt-[20vh] body-font">
-        <div className="container px-5 mx-auto flex flex-wrap">
-          <div className="flex w-full flex-wrap">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-black lg:w-1/3 lg:mb-0 mb-4">Media Gallery</h1>
-          </div>
-          <div className="flex flex-wrap md:-m-2 -m-1">
-            <div className="flex flex-wrap w-1/2">
-              <div className="md:p-2 p-1 w-1/2">
-                <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://www.feeta.pk/uploads/mobile_images/2021-12-06-05-49-20-2424-1638769760_960x540_91.webp"/>
-              </div>
-              <div className="md:p-2 p-1 w-1/2">
-                <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://www.feeta.pk/uploads/mobile_images/2021-12-06-08-13-06-8989-1638778386_960x499.2_91.webp"/>
-              </div>
-              <div className="md:p-2 p-1 w-full">
-                <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://www.dhagwa.com/Content/Images/DHA%20Office%20Complex.jpeg"/>
-              </div>
-            </div>
-            <div className="flex flex-wrap w-1/2">
-              <div className="md:p-2 p-1 w-full">
-                <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://i0.wp.com/eproperty.pk/wp-content/uploads/2020/03/DHA-Gujranwala-Main-Gate.jpg?resize=500%2C282&ssl=1"/>
-              </div>
-              <div className="md:p-2 p-1 w-1/2">
-                <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://content-cdn.zameen.com/Enem_Holdings_DHA_Gujranwala_About_projects_8974ee4a01.jpg"/>
-              </div>
-              <div className="md:p-2 p-1 w-1/2">
-                <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://www.dhagwa.com/Content/Images/Villas.png"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Gallery */}
-      {/* contact from */}
+      <div className="py-5 md:mt-[20vh]">
+        <div className="w-1/2 my-2 mx-32">
+        <p className="text-sm my-5 font-bold">COMMUNITIES ————————</p>
+        <h1 className="text-3xl font-bold">
+        FEATURED COMMUNITIES</h1></div>
+      <MultiImageSlider/>
+      </div>
+      <Gallery/>
+      <DownloadApp/>
       <Contactform/>
       {/* contact from */}
 

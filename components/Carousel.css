@@ -39,7 +39,7 @@
     background-color: white;
     height: 0.5rem;
     width: 0.5rem;
-    border-radius: 50%;
+    border-radius: 0;
     border: none;
     outline: none;
     box-shadow: 0px 0px 5px #555;
@@ -50,7 +50,7 @@
     display: none;
 }
 .indicator-inactive{
-    background-color: gray;
+    background-color: rgb(41, 41, 41);
 }
 
 .Carousel-main{
