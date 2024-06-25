@@ -9,43 +9,43 @@ import { FaArrowsRotate } from "react-icons/fa6";
 const DownloadApp = () => {
     return (
         <div className='mt-[10vh] md:flex-row flex-col flex justify-between'>
-            <div className='w-full md:w-1/2 py-2 px-8'>
+            <div className='w-full md:w-1/2 py-2 md:px-8 px-2'>
                 <p className='text-gray-800 text-sm px-4 font-bold pt-14 pb-6 '>A DIGITAL EXPERIENCE ————————</p>
-                <h1 className='text-5xl p-2 leading-[1.2]'>THE ULTIMATE APP FOR ALL YOUR PROPERTY NEEDS</h1>
+                <h1 className='lg:text-5xl md:text-4xl text-3xl p-2 leading-[1.2]'>THE ULTIMATE APP FOR ALL YOUR PROPERTY NEEDS</h1>
                 <div className="flex gap-4">
-                    <ul className='p-4'>
+                    <ul className='md:p-4 p-2'>
                         <li className="flex items-center py-2 gap-2 px-2 hover:bg-gray-200 transition-all cursor-pointer">
-                            <span className="text-2xl rounded-full bg-gray-300 p-2"><MdOutlineConstruction /></span>
+                            <span className="text-2xl rounded-full bg-gray-300 md:p-2 p-1"><MdOutlineConstruction /></span>
                             <span>Construction progress</span>
                         </li>
                         <li className="flex items-center py-2 gap-2 px-2 hover:bg-gray-200 transition-all cursor-pointer">
-                            <span className="text-2xl rounded-full bg-gray-300 p-2"><FaFile /></span>
+                            <span className="text-2xl rounded-full bg-gray-300 md:p-2 p-1"><FaFile /></span>
                             <span>Property transfers</span>
                         </li>
                         <li className="flex items-center py-2 gap-2 px-2 hover:bg-gray-200 transition-all cursor-pointer">
-                            <span className="text-2xl rounded-full bg-gray-300 p-2"><FaAddressCard /></span>
+                            <span className="text-2xl rounded-full bg-gray-300 md:p-2 p-1"><FaAddressCard /></span>
                             <span>Ownership updates</span>
                         </li>
                         <li className="flex items-center py-2 gap-2 px-2 hover:bg-gray-200 transition-all cursor-pointer">
-                            <span className="text-2xl rounded-full bg-gray-300 p-2"><FaTableTennis /></span>
+                            <span className="text-2xl rounded-full bg-gray-300 md:p-2 p-1"><FaTableTennis /></span>
                             <span>Move In/Out requests</span>
                         </li>
                     </ul>
                     <ul className='p-4'>
                         <li className="flex items-center py-2 gap-2 px-2 hover:bg-gray-200 transition-all cursor-pointer">
-                            <span className="text-2xl rounded-full bg-gray-300 p-2"><FaRegShareSquare /></span>
+                            <span className="text-2xl rounded-full bg-gray-300 md:p-2 p-1"><FaRegShareSquare /></span>
                             <span>Access card requests</span>
                         </li>
                         <li className="flex items-center py-2 gap-2 px-2 hover:bg-gray-200 transition-all cursor-pointer">
-                            <span className="text-2xl rounded-full bg-gray-300 p-2"><FaArrowsRotate /></span>
+                            <span className="text-2xl rounded-full bg-gray-300 md:p-2 p-1"><FaArrowsRotate /></span>
                             <span>Online payments</span>
                         </li>
                         <li className="flex items-center py-2 gap-2 px-2 hover:bg-gray-200 transition-all cursor-pointer">
-                            <span className="text-2xl rounded-full bg-gray-300 p-2"><TbBrandBooking /></span>
+                            <span className="text-2xl rounded-full bg-gray-300 md:p-2 p-1"><TbBrandBooking /></span>
                             <span>Amenities booking</span>
                         </li>
                         <li className="flex items-center py-2 gap-2 px-2 hover:bg-gray-200 transition-all cursor-pointer">
-                            <span className="text-2xl rounded-full bg-gray-300 p-2"><FaHome /></span>
+                            <span className="text-2xl rounded-full bg-gray-300 md:p-2 p-1"><FaHome /></span>
                             <span>Home services</span>
                         </li>
                     </ul>
