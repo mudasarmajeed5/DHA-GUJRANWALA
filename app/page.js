@@ -68,7 +68,7 @@ export default function Home() {
       </div>
 
       <div className="py-5 md:mt-[20vh]">
-        <div className="w-1/2 my-2 mx-32">
+        <div className="w-1/2 my-2 mx-auto md:text-left text-center md:mx-32">
         <p className="text-sm my-5 font-bold">COMMUNITIES ————————</p>
         <h1 className="text-3xl font-bold">
         FEATURED COMMUNITIES</h1></div>
@@ -95,7 +95,7 @@ export default function Home() {
     }
     {/* Search categories of homes */}
     {showMobileDiv && (
-      <div className='z-10 fixed bottom-0 left-0 w-full flex justify-center gap-4 py-4 md:hidden bg-white'>
+      <div className='z-10 fixed bottom-0 left-0 w-full flex justify-center gap-1 py-4 md:hidden bg-white'>
         <button onClick={toggleSearchDiv} className='bg-white text-black border border-black px-4 py-2'>
           {showSearchDiv ? 'Close menu' : 'Explore categories'}
         </button>

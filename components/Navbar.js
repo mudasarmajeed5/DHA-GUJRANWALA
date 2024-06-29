@@ -2,7 +2,7 @@
 import "./Navbar.css"
 import { RiMenu3Line } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
-import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -14,12 +14,16 @@ const Navbar = () => {
   const [isDhaOpen, setIsDhaOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isMediaOpen, setIsMediaOpen] = useState(false);
-
+  const [isOngoingProjectsOpen, setIsOngoingProjectsOpen] = useState(false);
   const closeAllDropdowns = () => {
     setIsProjectsOpen(false);
     setIsDhaOpen(false);
     setIsAboutOpen(false);
     setIsMediaOpen(false);
+    setIsOngoingProjectsOpen(false);
+  };
+  const toggleOngoingProjects = () => {
+    setIsOngoingProjectsOpen(!isOngoingProjectsOpen);
   };
   const toggleProjects = () => {
     closeAllDropdowns();
@@ -66,13 +70,30 @@ const Navbar = () => {
             <div className="z-10 text-left bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
               <ul className="py-2 text-sm text-gray-700">
                 <li>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">Upcoming</a>
+                  <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>Upcoming</span><span><FaArrowRight /></span></a>
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">Ongoing</a>
+                  <span href="#" onClick={toggleOngoingProjects} className="hover:cursor-pointer items-center px-4 py-2 flex justify-between hover:bg-gray-100">
+                    <span>Ongoing Projects</span><span><FaArrowRight /></span>
+                  </span>
+                  {isOngoingProjectsOpen && (
+                    <div className="absolute left-44 top-10 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2">
+                      <ul className="py-2 text-sm text-gray-700">
+                        <li>
+                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">2 Marla Commercial</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">4 Marla Commercial</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">6 Marla Commercial</a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">Delivered</a>
+                  <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>Delivered</span><span><FaArrowRight /></span></a>
                 </li>
               </ul>
             </div>
@@ -139,31 +160,31 @@ const Navbar = () => {
             </div>
           )}
         </div>
-
+        {/* Media DropDown */}
         <div className="px-2 py-1 rounded-lg relative">
-      <button
-        className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
-        onClick={toggleMedia}
-      >
-        <span>Media</span>
-        <span><IoIosArrowDown /></span>
-      </button>
-      {isMediaOpen && (
-        <div className="z-10 text-left bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
-          <ul className="py-2 text-sm text-gray-700">
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100">Images</a>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100">Videos</a>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100">Documents</a>
-            </li>
-          </ul>
+          <button
+            className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
+            onClick={toggleMedia}
+          >
+            <span>Media</span>
+            <span><IoIosArrowDown /></span>
+          </button>
+          {isMediaOpen && (
+            <div className="z-10 text-left bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
+              <ul className="py-2 text-sm text-gray-700">
+                <li>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">Images</a>
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">Videos</a>
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">Documents</a>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
-      )}
-    </div>
       </div>
 
       <div className="contact place-self-center md:flex hidden gap-1">
@@ -174,7 +195,7 @@ const Navbar = () => {
 
 
       <div className="place-self-center justify-self-end">
-        <div className="md:hidden  justify-center text-2xl flex items-center">
+        <div className="md:hidden justify-center text-2xl flex items-center">
           <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">{DropDown ? <RxCross1 className="text-white" /> : <RiMenu3Line />}</span>
           <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white flex flex-col justce items-center`}>
             {/* Projects Dropdown */}
@@ -190,13 +211,38 @@ const Navbar = () => {
                 <div className="z-10 text-left bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
                   <ul className="py-2 text-sm text-gray-700">
                     <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Upcoming</a>
+                      <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>Upcoming</span><span><FaArrowRight /></span></a>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Ongoing</a>
+                      <span
+                        href="#"
+                        onClick={toggleOngoingProjects}
+                        className="hover:cursor-pointer items-center px-4 py-2 flex justify-between hover:bg-gray-100"
+                      >
+                        <span>Ongoing Projects</span>
+                        <span className={`transition-transform duration-500 ${isOngoingProjectsOpen ? 'rotate-90' : 'rotate-0'}`}>
+                          <FaArrowRight />
+                        </span>
+                      </span>
+
+                      {isOngoingProjectsOpen && (
+                        <div className="relative z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2">
+                          <ul className="py-2 text-sm text-gray-700">
+                            <li>
+                              <a href="#" className="block px-4 py-2 hover:bg-gray-100">2 Marla Commercial</a>
+                            </li>
+                            <li>
+                              <a href="#" className="block px-4 py-2 hover:bg-gray-100">4 Marla Commercial</a>
+                            </li>
+                            <li>
+                              <a href="#" className="block px-4 py-2 hover:bg-gray-100">6 Marla Commercial</a>
+                            </li>
+                          </ul>
+                        </div>
+                      )}
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Delivered</a>
+                      <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>Delivered</span><span><FaArrowRight /></span></a>
                     </li>
                   </ul>
                 </div>
@@ -263,7 +309,31 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            
+            {/* Media DropDown */}
+            <div className="px-2 py-1 rounded-lg relative">
+              <button
+                className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
+                onClick={toggleMedia}
+              >
+                <span>Media</span>
+                <span><IoIosArrowDown /></span>
+              </button>
+              {isMediaOpen && (
+                <div className="z-10 text-left bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
+                  <ul className="py-2 text-sm text-gray-700">
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Images</a>
+                    </li>
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Videos</a>
+                    </li>
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Documents</a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
 
           </ul>
         </div>

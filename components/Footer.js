@@ -1,229 +1,149 @@
 const Footer = () => {
   return (
-    <footer className="text-gray-800 bg-gray-200 body-font">
-    <div className="container px-5 py-24 mx-auto">
-      <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
-        <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-            CATEGORIES
-          </h2>
-          <nav className="list-none mb-10">
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
+    <>
+    <footer className="bg-gray-300">
+    <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="md:flex md:justify-between">
+        <div className="mb-6 md:mb-0">
+          <a href="https://dhagwa.vercel.app/" className="flex justify-center  flex-col md:flex-row items-center">
+            <img
+              src="https://i.ibb.co/RQ2Lj7c/dhalogo.png"
+              className="w-[200px] h-auto me-3"
+              alt="FlowBite Logo"
+            />
+            <span className="self-center underline text-green-700 underline-offset-4 text-2xl font-semibold whitespace-nowrap">
+              Aesthetically Futuristic
+            </span>
+          </a>
         </div>
-        <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-            CATEGORIES
-          </h2>
-          <nav className="list-none mb-10">
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-            CATEGORIES
-          </h2>
-          <nav className="list-none mb-10">
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-            CATEGORIES
-          </h2>
-          <nav className="list-none mb-10">
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-            CATEGORIES
-          </h2>
-          <nav className="list-none mb-10">
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-            CATEGORIES
-          </h2>
-          <nav className="list-none mb-10">
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
+        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              Resources
+            </h2>
+            <ul className="text-gray-500 font-medium">
+              <li className="mb-4">
+                <a href="https://flowbite.com/" className="hover:underline">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="https://tailwindcss.com/" className="hover:underline">
+                  Ongoing Projects
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              Follow us
+            </h2>
+            <ul className="text-gray-500 font-medium">
+              <li className="mb-4">
+                <a
+                  href="https://github.com/themesberg/flowbite"
+                  className="hover:underline "
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.gg/4eeurUVvTy"
+                  className="hover:underline"
+                >
+                  Facebook
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              Legal
+            </h2>
+            <ul className="text-gray-500 font-medium">
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Terms &amp; Conditions
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="border-t border-gray-200">
-      <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
-        <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
-          <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
-            <label
-              htmlFor="footer-field"
-              className="leading-7 text-sm text-gray-600"
-            >
-              Get in touch
-            </label>
-            <input
-              type="text"
-              id="footer-field"
-              placeholder="Enter your Email"
-              name="footer-field"
-              className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-            Submit
-          </button>
-          <p className="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">
-            Bitters chicharrones fanny pack
-            <br className="lg:block hidden" />
-            waistcoat green juice
-          </p>
-        </div>
-        <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-          <a className="text-gray-500">
-            <svg
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-            </svg>
+      <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+      <div className="sm:flex sm:items-center sm:justify-between">
+        <span className="text-sm text-gray-500 sm:text-center">
+          © 2024{" "}
+          <a href="https://flowbite.com/" className="hover:underline">
+            DHA GUJRANWALA™
           </a>
-          <a className="ml-3 text-gray-500">
+          . All Rights Reserved.
+        </span>
+        <div className="flex mt-4 sm:justify-center sm:mt-0">
+          <a
+            href="#"
+            className="text-gray-500 hover:text-gray-900"
+          >
             <svg
+              className="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-            </svg>
-          </a>
-          <a className="ml-3 text-gray-500">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
-            </svg>
-          </a>
-          <a className="ml-3 text-gray-500">
-            <svg
-              fill="currentColor"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={0}
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
+              viewBox="0 0 8 19"
             >
               <path
-                stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                fillRule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clipRule="evenodd"
               />
-              <circle cx={4} cy={4} r={2} stroke="none" />
             </svg>
+            <span className="sr-only">Facebook page</span>
           </a>
-        </span>
-      </div>
-    </div>
-    <div className="bg-gray-100">
-      <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p className="text-gray-500 text-sm text-center sm:text-left">
-          © 2024 Tailblocks —
           <a
-            href="https://twitter.com/knyttneve"
-            className="text-gray-600 ml-1"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
+            className="text-gray-500 hover:text-gray-900 ms-5"
           >
-            @knyttneve
+            <svg
+              className="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 21 16"
+            >
+              <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+            </svg>
+            <span className="sr-only">Our community</span>
           </a>
-        </p>
-        <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
-          Enamel pin tousled raclette tacos irony
-        </span>
+          <a
+            href="#"
+            className="text-gray-500 hover:text-gray-900 ms-5"
+          >
+            <svg
+              className="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 17"
+            >
+              <path
+                fillRule="evenodd"
+                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <span className="sr-only">Twitter/X Handle</span>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
+  </>
   )
 }
 
