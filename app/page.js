@@ -67,7 +67,7 @@ export default function Home() {
       <div className="py-5 md:mt-[20vh]">
         <div className="w-1/2 my-2 mx-auto md:text-left text-center md:mx-16">
         <p className="text-lg my-5 md:text-left text-center underline font-bold">COMMUNITIES</p>
-        <h1 className="text-3xl md:text-left text-center  font-bold">
+        <h1 className="md:text-3xl md:text-left text-center  font-bold text-2xl">
         FEATURED COMMUNITIES</h1></div>
       <MultiImageSlider/>
       </div>
