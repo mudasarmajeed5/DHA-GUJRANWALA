@@ -32,7 +32,7 @@ const TwoMarlaCommercial = () => {
                     </div>
                 </div>
                 <div className="border my-3"></div>
-                <div className="text-3xl tracking-widest px-5 flex justify-between text-green-900"><span>Details?</span> <span>Pictures?</span> <span>Benefits?</span></div>
+                <div className="md:text-3xl text-2xl tracking-widest px-5 flex justify-between text-green-900"><span>Details?</span> <span>Pictures?</span> <span>Benefits?</span></div>
                 <div className="border my-3"></div>
                 {/* Contact Page */}
 
