@@ -22,7 +22,6 @@
     cursor: pointer;
 }
 .arrow:hover{
-    background-color: black;
     opacity: 1;
 }
 .arrow-left{

@@ -39,7 +39,7 @@ export default function Home() {
   return (<>
     <marquee behavior="" direction="horizontal" className='text-white bg-green-700'>DHA Gujranwala has introduced 2 marla commercial plots for sale in developed sectors. For more information, please contact the sales office. Thank you.</marquee>
     <Carousel/>
-    <button className="fixed rounded-md hover:text-white md:hidden transition-all duration-300 p-1 right-2 bottom-2 text-5xl text-green-500 z-20"><IoLogoWhatsapp /></button>
+    <button className="fixed rounded-md hover:text-green-800 md:hidden transition-all duration-300 p-1 right-2 bottom-2 text-5xl text-green-500 z-20"><IoLogoWhatsapp /></button>
     <main className="min-h-screen relative">
       <div className="hidden rounded-full mt-[-13vh] md:flex max-w-fit flex-row gap-4 py-2 bg-[#ffffffa8] mx-auto w-60vw justify-start px-8 items-center">
         <label htmlFor="propertyType" className="text-black">Property Type</label>
@@ -64,7 +64,7 @@ export default function Home() {
         <button className="text-white bg-green-700 hover:bg-green-900 hover:text-white px-4 py-1 rounded">Search</button>
       </div>
 
-      <div className="py-5 md:mt-[20vh]">
+      <div className="py-2 md:mt-[20vh]">
         <div className="w-1/2 my-2 mx-auto md:text-left text-center md:mx-16">
         <p className="text-lg my-5 md:text-left text-center underline font-bold">COMMUNITIES</p>
         <h1 className="md:text-3xl md:text-left text-center  font-bold text-2xl">
@@ -85,9 +85,9 @@ export default function Home() {
     {showButton && (
       <div
         onClick={scrollToTop}
-        className='fixed bottom-4 left-2 z-50 border border-black p-3 rounded-full cursor-pointer shadow-lg'
+        className='fixed bottom-4 left-2 z-50 border-black hover:border-green-500 hover:bg-black hover:text-white p-2 border-2 rounded-full cursor-pointer shadow-lg'
       >
-        <span className="text-black"><FaArrowUp /></span>
+        <span className=""><FaArrowUp /></span>
       </div>)
     }
     {/* Search categories of homes */}

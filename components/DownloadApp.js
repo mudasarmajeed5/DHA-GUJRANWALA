@@ -8,7 +8,7 @@ import { TbBrandBooking } from "react-icons/tb";
 import { FaArrowsRotate } from "react-icons/fa6";
 const DownloadApp = () => {
     return (
-        <div className='mt-[10vh] md:flex-row flex-col flex justify-between'>
+        <div className='md:flex-row flex-col flex justify-between'>
             <div className='w-full md:w-1/2 py-2 md:px-8 px-2'>
                 <p className='text-black px-4 pt-14 pb-2 text-lg my-5 md:text-left text-center underline underline-offset-4 font-bold'>A DIGITAL EXPERIENCE</p>
                 <h1 className='font-bold text-3xl p-2 md:text-left text-center leading-[1.2]'>THE ULTIMATE <span className="text-red-600">APP </span>FOR ALL YOUR PROPERTY NEEDS</h1>

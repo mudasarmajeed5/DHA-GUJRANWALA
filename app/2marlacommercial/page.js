@@ -57,13 +57,13 @@ const TwoMarlaCommercial = () => {
                                 />
                             </div>
                             <div className="relative mb-4">
-                                <label htmlFor="name" className="leading-7 text-sm text-gray-600">
+                                <label htmlFor="phone" className="leading-7 text-sm text-gray-600">
                                     Phone
                                 </label>
                                 <input
                                     type="text"
-                                    id="name"
-                                    name="name"
+                                    id="phone"
+                                    name="phone"
                                     className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                 />
                             </div>
@@ -83,6 +83,7 @@ const TwoMarlaCommercial = () => {
                                     Message
                                 </label>
                                 <textarea
+                                    placeholder='Leave us a Message!'
                                     id="message"
                                     name="message"
                                     className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-22 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
@@ -101,8 +102,8 @@ const TwoMarlaCommercial = () => {
 
                 {/* Contact Page */}
                 <div
-                    className={`fixed bottom-0 z-10 w-full gap-2 text-sm p-2 bg-green-900 flex justify-center items-center shadow-md transition-transform ${show ? 'translate-y-0' : 'translate-y-full'}`}>
-                    <button className="border rounded-full bg-transparent border-white shadow-md hover:shadow-green-500 transition-all text-white px-4 py-2 flex items-center gap-1"><span><FaDownload/></span>Brochure<span></span></button>
+                    className={`fixed bottom-0 z-10 w-full gap-2 text-sm p-2 bg-green-900 flex justify-center items-center shadow-md transition-transform duration-500 ${show ? 'translate-y-0' : 'translate-y-full'}`}>
+                    <button className="border rounded-full bg-transparent border-white shadow-md hover:shadow-green-500 transition-all text-white px-4  py-2 flex items-center gap-1"><span><FaDownload/></span>Brochure<span></span></button>
                     <button className="border rounded-full bg-transparent border-white shadow-md hover:shadow-green-500 transition-all text-white px-4 py-2">Enquire Now</button>
                 </div>
             </div>
