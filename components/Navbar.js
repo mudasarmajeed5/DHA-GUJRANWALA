@@ -47,7 +47,7 @@ const Navbar = () => {
 
   const router = useRouter()
   return (
-    <div className='text-center backdrop-blur-sm bg-[rgba(255,255,255,1)] sticky top-0 py-0 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
+    <div className='text-center bg-white sticky top-0 py-0 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
 
 
       <div onClick={() => router.push('/')} className="md:text-3xl text-2xl cursor-pointer underline-offset-4 navbar-name">
