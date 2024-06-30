@@ -10,8 +10,8 @@ const DownloadApp = () => {
     return (
         <div className='mt-[10vh] md:flex-row flex-col flex justify-between'>
             <div className='w-full md:w-1/2 py-2 md:px-8 px-2'>
-                <p className='text-gray-800 text-sm px-4 font-bold pt-14 pb-6 '>A DIGITAL EXPERIENCE ————————</p>
-                <h1 className='lg:text-5xl md:text-4xl text-3xl p-2 leading-[1.2]'>THE ULTIMATE APP FOR ALL YOUR PROPERTY NEEDS</h1>
+                <p className='text-black px-4 pt-14 pb-2 text-lg my-5 md:text-left text-center underline underline-offset-4 font-bold'>A DIGITAL EXPERIENCE</p>
+                <h1 className='font-bold text-3xl p-2 md:text-left text-center leading-[1.2]'>THE ULTIMATE <span className="text-red-600">APP </span>FOR ALL YOUR PROPERTY NEEDS</h1>
                 <div className="flex gap-4">
                     <ul className='md:p-4 p-2'>
                         <li className="flex items-center py-2 gap-2 px-2 hover:bg-gray-200 transition-all cursor-pointer">

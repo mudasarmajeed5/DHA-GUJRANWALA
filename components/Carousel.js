@@ -11,18 +11,25 @@ const Carousel = () => {
                 "alt": "LipGloss",
                 "text": ""
             },
+            
             {
-                "id" : "2",
-                "src": "https://i.pinimg.com/originals/6d/20/ca/6d20caa0166fcea0555d55706fedeed0.jpg",
-                "alt": "Unstitched Cotton",
+                "id" : "3",
+                "src": "/sliderimages/ARY-Laguna-Gujranwala-DHA-Gujranwala.jpg",
+                "alt": "Makeup",
+                "text": ""
+            },
+            {   
+                "id" : "4",
+                "src": "/sliderimages/10 Marla Villas.jpg",
+                "alt": "Makeup",
                 "text": ""
             },
             {
-                "id" : "3",
-                "src": "https://png.pngtree.com/background/20230618/original/pngtree-luxurious-home-design-with-garage-a-3d-rendering-picture-image_3758650.jpg",
-                "alt": "Makeup",
+                "id" : "2",
+                "src": "/sliderimages/third image.jpg",
+                "alt": "Unstitched Cotton",
                 "text": ""
-            }
+            },
         ]
     }
     let Imagedata = CarouselData.slides;
@@ -43,7 +50,7 @@ const Carousel = () => {
     }
 
     return (
-        <div className="carousel w-full">
+        <div className="carousel w-full mt-[-7px]">
             <MdArrowBackIos className="arrow arrow-left" onClick={preSlide} />
             {Imagedata.map((image, index) => {
                 return (

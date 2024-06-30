@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Card = ({ heading, paragraph, buttonText, imageSrc }) => {
   return (
-    <div className="max-w-sm mx-2 rounded-lg ">
+    <div className="min-w-sm mx-2 rounded-lg">
       <a href="#">
         <div className="overflow-hidden">
           <img
-            className="hover:scale-105 transition-transform duration-1000"
+            className="hover:scale-105 h-[330px] md:w-[260px] w-full object-cover object-center transition-transform duration-1000"
             src={imageSrc}
             alt=""
           />
@@ -37,42 +37,43 @@ const Card = ({ heading, paragraph, buttonText, imageSrc }) => {
 
 const cardsData = [
   {
-    heading: "Tech Acquisitions",
-    paragraph: "Biggest enterprise technology acquisitions of 2021.",
+    heading: "Executive Block",
+    paragraph: "Biggest enterprise technology acquisitions of 2024.",
     buttonText: "View Details",
-    imageSrc: "https://www-emaar-com.azureedge.net/wp-content/uploads/2024/06/THE-HEIGHT-_320X415.jpeg"
+    imageSrc: "/sliderimages/third image.jpg"
   },
   {
-    heading: "Innovation in AI",
-    paragraph: "AI is transforming industries globally.",
+    heading: "Villas",
+    paragraph: "Luxurious living spaces with modern amenities.",
     buttonText: "View Details",
-    imageSrc: "https://www-emaar-com.azureedge.net/wp-content/uploads/2024/05/Community-Featured-Image-portrait-320x415.jpg"
+    imageSrc: "/sliderimages/10 Marla Villas.jpg"
   },
   {
-    heading: "Future of Work",
-    paragraph: "Remote work is the new normal for many.",
+    heading: "Commercial Zone",
+    paragraph: "Prime business locations for your enterprise.",
     buttonText: "View Details",
-    imageSrc: "https://www-emaar-com.azureedge.net/wp-content/uploads/2023/06/OASIS_320-x-415-320x415-1-320x415.jpg.webp"
+    imageSrc: "/sliderimages/Commercials.png"
   },
   {
-    heading: "Healthcare Advances",
-    paragraph: "Technology is revolutionizing healthcare.",
+    heading: "ARY Laguna",
+    paragraph: "Exclusive waterfront community with stunning views.",
     buttonText: "View Details",
-    imageSrc: "https://www-emaar-com.azureedge.net/wp-content/uploads/2021/08/DUBAI_MARINA_COMMUNITY-320x415.jpg"
+    imageSrc: "/sliderimages/ary-laguna.png"
   },
   {
-    heading: "Renewable Energy",
-    paragraph: "Solar and wind energy are on the rise.",
+    heading: "Education System",
+    paragraph: "State-of-the-art facilities for academic excellence.",
     buttonText: "View Details",
-    imageSrc: "https://www-emaar-com.azureedge.net/wp-content/uploads/2021/08/DHE_COMMUNITY_HERO-resize-scaled-1-320x415.jpeg"
+    imageSrc: "/sliderimages/future-world-school.jpg"
   },
   {
-    heading: "Space Exploration",
-    paragraph: "New missions to Mars and beyond.",
+    heading: "Medical Center",
+    paragraph: "Advanced healthcare services for your well-being.",
     buttonText: "View Details",
-    imageSrc: "https://www-emaar-com.azureedge.net/wp-content/uploads/2021/08/DUBAI_CREEK_HARBOUR_HERO-320x415.jpg"
+    imageSrc: "https://media.istockphoto.com/id/1283128541/photo/hall-of-deep-hospital.jpg?s=612x612&w=0&k=20&c=GdvjMwj3Vr4h0aNa0svd-IBtZF-5UgLDOp7MSs8L0ZM="
   }
 ];
+
 
 
 const MultiImageSlider = () => {
@@ -81,6 +82,8 @@ const MultiImageSlider = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToScroll: 1,
     responsive: [
       {
@@ -111,7 +114,7 @@ const MultiImageSlider = () => {
   };
 
   return (
-    <Slider className='w-4/5 py-5 mx-auto' {...settings}>
+    <Slider className='w-4/5 md:w-11/12 py-5 mx-auto' {...settings}>
       {cardsData.map((card, index) => (
         <Card
           key={index}

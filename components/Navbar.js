@@ -47,7 +47,7 @@ const Navbar = () => {
 
   const router = useRouter()
   return (
-    <div className='text-center backdrop-blur-sm bg-[rgba(255,255,255,0.9)] sticky top-0 py-2 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
+    <div className='text-center backdrop-blur-sm bg-[rgba(255,255,255,1)] sticky top-0 py-0 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
 
 
       <div onClick={() => router.push('/')} className="md:text-3xl text-2xl cursor-pointer underline-offset-4 navbar-name">
@@ -56,7 +56,7 @@ const Navbar = () => {
 
 
 
-      <div className="md:flex place-self-center gap-0 hidden">
+      <div className="md:flex place-self-center gap-0 hidden" >
         {/* Projects Dropdown */}
         <div className="px-2 py-1 rounded-lg relative">
           <button
@@ -80,7 +80,7 @@ const Navbar = () => {
                     <div className="absolute left-44 top-10 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2">
                       <ul className="py-2 text-sm text-gray-700">
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">2 Marla Commercial</a>
+                          <a href="2marlacommercial" className="block px-4 py-2 hover:bg-gray-100">2 Marla Commercial</a>
                         </li>
                         <li>
                           <a href="#" className="block px-4 py-2 hover:bg-gray-100">4 Marla Commercial</a>
@@ -94,6 +94,9 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>Delivered</span><span><FaArrowRight /></span></a>
+                </li>
+                <li>
+                  <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>JV Projects</span><span><FaArrowRight /></span></a>
                 </li>
               </ul>
             </div>
@@ -179,7 +182,7 @@ const Navbar = () => {
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">Videos</a>
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">Documents</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">3D Tour / Maps</a>
                 </li>
               </ul>
             </div>
@@ -188,18 +191,18 @@ const Navbar = () => {
       </div>
 
       <div className="contact place-self-center md:flex hidden gap-1">
-        <button className="px-2 flex gap-1 justify-center items-center bg-green-800 hover:text-white transition-all duration-300 py-1 text-white border hover:bg-green-900 border-green-600">Become JV Partner</button>
-        <button className="px-2 py-1 border border-green-600 hover:bg-green-500 hover:text-white transition-all duration-300 flex gap-1 justify-center items-center"><span><IoCallSharp /></span><span>Contact us</span></button>
-        <button className="px-2 flex gap-1 justify-center items-center hover:bg-green-700 hover:text-white transition-all duration-300 py-1 border border-green-600"><span><FaWhatsapp /></span><span>Whatsapp</span></button>
+        <button className="rounded-full px-2 border border-green-600 hover:bg-green-500 hover:text-white transition-all duration-300 text-sm flex gap-1 justify-center items-center"><span><IoCallSharp /></span><span>Sales Office</span></button>
+        <button className="rounded-full px-2 flex gap-1 justify-center items-center hover:bg-green-700 hover:text-white transition-all duration-300 text-sm py-1 border border-green-600"><span><FaWhatsapp /></span><span>Whatsapp</span></button>
+        <button className="rounded-full px-2 flex gap-1 justify-center items-center text-black border-green-600 transition-all duration-300 text-sm py-1 hover:text-white border hover:bg-green-900">Become JV Partner</button>
       </div>
 
 
       <div className="place-self-center justify-self-end">
         <div className="md:hidden justify-center text-2xl flex items-center">
           <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">{DropDown ? <RxCross1 className="text-white" /> : <RiMenu3Line />}</span>
-          <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white flex flex-col justce items-center`}>
+          <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white flex flex-col justify-center items-center`}>
             {/* Projects Dropdown */}
-            <div className="px-2 py-1 rounded-lg relative">
+            <div  className="px-2 py-1 rounded-lg relative">
               <button
                 className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
                 onClick={toggleProjects}
@@ -229,7 +232,7 @@ const Navbar = () => {
                         <div className="relative z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2">
                           <ul className="py-2 text-sm text-gray-700">
                             <li>
-                              <a href="#" className="block px-4 py-2 hover:bg-gray-100">2 Marla Commercial</a>
+                              <a href="/2marlacommercial" className="block px-4 py-2 hover:bg-gray-100">2 Marla Commercial</a>
                             </li>
                             <li>
                               <a href="#" className="block px-4 py-2 hover:bg-gray-100">4 Marla Commercial</a>
@@ -244,13 +247,16 @@ const Navbar = () => {
                     <li>
                       <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>Delivered</span><span><FaArrowRight /></span></a>
                     </li>
+                    <li>
+                      <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>JV Projects</span><span><FaArrowRight /></span></a>
+                    </li>
                   </ul>
                 </div>
               )}
             </div>
 
             {/* DHA Assist Dropdown */}
-            <div className="px-2 py-1 rounded-lg relative">
+            <div  className="px-2 py-1 rounded-lg relative">
               <button
                 className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
                 onClick={toggleDha}
@@ -285,7 +291,7 @@ const Navbar = () => {
             </div>
 
             {/* About Us Dropdown */}
-            <div className="px-2 py-1  rounded-lg relative">
+            <div  className="px-2 py-1  rounded-lg relative">
               <button
                 className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
                 onClick={toggleAbout}
@@ -310,7 +316,7 @@ const Navbar = () => {
               )}
             </div>
             {/* Media DropDown */}
-            <div className="px-2 py-1 rounded-lg relative">
+            <div  className="px-2 py-1 rounded-lg relative">
               <button
                 className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
                 onClick={toggleMedia}
@@ -328,7 +334,7 @@ const Navbar = () => {
                       <a href="#" className="block px-4 py-2 hover:bg-gray-100">Videos</a>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Documents</a>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">3D Tour/Map</a>
                     </li>
                   </ul>
                 </div>
