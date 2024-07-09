@@ -3,22 +3,27 @@
         opacity: 1;
         width: 100vw;
         height: 100vh;
-        background-color: var(--rich-black);
+        background-color:#00263a;
     }
 }
-
+.IsProjectsOpen {
+    border-bottom: 1px solid #1095dd;
+}
 .navbar-name {
     font-family: "Signika", sans-serif;
 }
 
 .getquote {
-    transition: 0.2s ease color,.2s ease text-underline-offset;
-    
+    transition:all 0.2s ease;
 }
+.getquote1{
+    transition:all 0.2s ease;
+    border-bottom: 1px solid #066192;
+    padding: 5px 10px;
+}
+.getquote1:hover {
+    background-color: green;
 
-.getquote:hover {
-    color: var(--non-photo-blue);
-    color: green;
 }
 
 .HamBurger_DropDown {
@@ -32,7 +37,6 @@
     gap: 10px;
     opacity: 0;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     animation: .3s cubic-bezier(0.165, 0.84, 0.44, 1) increaseHeight forwards;
 }

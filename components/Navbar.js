@@ -200,148 +200,153 @@ const Navbar = () => {
       <div className="place-self-center justify-self-end">
         <div className="md:hidden justify-center text-2xl flex items-center">
           <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">{DropDown ? <RxCross1 className="text-white" /> : <RiMenu3Line />}</span>
-          <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white flex flex-col justify-center items-center`}>
-            {/* Projects Dropdown */}
-            <div  className="px-2 py-1 rounded-lg relative">
-              <button
-                className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
-                onClick={toggleProjects}
-              >
-                <span>Projects</span>
-                <span><IoIosArrowDown /></span>
-              </button>
-              {isProjectsOpen && (
-                <div className="z-10 text-left bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
-                  <ul className="py-2 text-sm text-gray-700">
-                    <li>
-                      <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>Upcoming</span><span><FaArrowRight /></span></a>
-                    </li>
-                    <li>
-                      <span
-                        href="#"
-                        onClick={toggleOngoingProjects}
-                        className="hover:cursor-pointer items-center px-4 py-2 flex justify-between hover:bg-gray-100"
-                      >
-                        <span>Ongoing Projects</span>
-                        <span className={`transition-transform duration-500 ${isOngoingProjectsOpen ? 'rotate-90' : 'rotate-0'}`}>
-                          <FaArrowRight />
-                        </span>
-                      </span>
+          <div className="flex flex-col gap-3">
+            <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white`}>
+              <div className="mt-[15%] px-2">
 
-                      {isOngoingProjectsOpen && (
-                        <div className="relative z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2">
-                          <ul className="py-2 text-sm text-gray-700">
-                            <li>
-                              <a href="/2marlacommercial" className="block px-4 py-2 hover:bg-gray-100">2 Marla Commercial</a>
-                            </li>
-                            <li>
-                              <a href="#" className="block px-4 py-2 hover:bg-gray-100">4 Marla Commercial</a>
-                            </li>
-                            <li>
-                              <a href="#" className="block px-4 py-2 hover:bg-gray-100">6 Marla Commercial</a>
-                            </li>
-                          </ul>
-                        </div>
-                      )}
-                    </li>
-                    <li>
-                      <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>Delivered</span><span><FaArrowRight /></span></a>
-                    </li>
-                    <li>
-                      <a href="#" className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"><span>JV Projects</span><span><FaArrowRight /></span></a>
-                    </li>
-                  </ul>
-                </div>
-              )}
-            </div>
+                {/* Projects Dropdown */}
+                <div className="px-2 py-1 rounded-lg relative">
+                  <button
+                    className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
+                    onClick={toggleProjects}
+                  >
+                    <span>Projects</span>
+                    <span><IoIosArrowDown /></span>
+                  </button>
+                  {isProjectsOpen && (
+                    <div className="z-10 text-left divide-y divide-gray-100 rounded-lg w-4/5 mx-auto">
+                      <ul className="py-2 text-sm">
+                        <li className="IsProjectsOpen">
+                          <a href="#" className="px-2 py-2 flex justify-between items-center"><span>Upcoming</span><span><FaArrowRight /></span></a>
+                        </li>
+                        <li className={`IsProjectsOpen ${isOngoingProjectsOpen ? 'border border-[#066192]':''}`}>
+                          <span
+                            href="#"
+                            onClick={toggleOngoingProjects}
+                            className="hover:cursor-pointer items-center px-2 py-2 flex justify-between"
+                          >
+                            <span>Ongoing Projects</span>
+                            <span className={`transition-transform duration-500 ${isOngoingProjectsOpen ? 'rotate-90' : 'rotate-0'}`}>
+                              <FaArrowRight />
+                            </span>
+                          </span>
 
-            {/* DHA Assist Dropdown */}
-            <div  className="px-2 py-1 rounded-lg relative">
-              <button
-                className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
-                onClick={toggleDha}
-              >
-                <span>DHA Assist</span>
-                <span><IoIosArrowDown /></span>
-              </button>
-              {isDhaOpen && (
-                <div className="z-10 text-left bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
-                  <ul className="py-2 text-sm text-gray-700">
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Procedure</a>
-                    </li>
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Payment voucher</a>
-                    </li>
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Important notices</a>
-                    </li>
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Building control</a>
-                    </li>
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Froms</a>
-                    </li>
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Registered Dealers</a>
-                    </li>
-                  </ul>
+                          {isOngoingProjectsOpen && (
+                            <div className="relative z-10 divide-y divide-gray-100 h-0 rounded-lg w-44 mt-2">
+                              <ul className="py-2 text-sm">
+                                <li>
+                                  <a href="/2marlacommercial" className="block py-2 px-2 hover:underline underline-offset-4">2 Marla Commercial</a>
+                                </li>
+                                <li>
+                                  <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">4 Marla Commercial</a>
+                                </li>
+                                <li>
+                                  <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">6 Marla Commercial</a>
+                                </li>
+                              </ul>
+                            </div>
+                          )}
+                        </li>
+                        <li className="IsProjectsOpen">
+                          <a href="#" className="py-2 px-2 flex justify-between items-center"><span>Delivered</span><span><FaArrowRight /></span></a>
+                        </li>
+                        <li className="IsProjectsOpen">
+                          <a href="#" className=" py-2 px-2 flex justify-between items-center"><span>JV Projects</span><span><FaArrowRight /></span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
 
-            {/* About Us Dropdown */}
-            <div  className="px-2 py-1  rounded-lg relative">
-              <button
-                className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
-                onClick={toggleAbout}
-              >
-                <span>About Us</span>
-                <span><IoIosArrowDown /></span>
-              </button>
-              {isAboutOpen && (
-                <div className="z-10 text-left bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
-                  <ul className="py-2 text-sm text-gray-700">
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Our Story</a>
-                    </li>
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Team</a>
-                    </li>
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Careers</a>
-                    </li>
-                  </ul>
+                {/* DHA Assist Dropdown */}
+                <div className="px-2 py-1 rounded-lg relative">
+                  <button
+                    className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
+                    onClick={toggleDha}
+                  >
+                    <span>DHA Assist</span>
+                    <span><IoIosArrowDown /></span>
+                  </button>
+                  {isDhaOpen && (
+                    <div className="z-10 text-left divide-y divide-gray-100 rounded-lg w-44 mt-2">
+                      <ul className="py-2 text-sm">
+                        <li>
+                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Procedure</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Payment voucher</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Important notices</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Building control</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Froms</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Registered Dealers</a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-            {/* Media DropDown */}
-            <div  className="px-2 py-1 rounded-lg relative">
-              <button
-                className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
-                onClick={toggleMedia}
-              >
-                <span>Media</span>
-                <span><IoIosArrowDown /></span>
-              </button>
-              {isMediaOpen && (
-                <div className="z-10 text-left bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
-                  <ul className="py-2 text-sm text-gray-700">
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Images</a>
-                    </li>
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">Videos</a>
-                    </li>
-                    <li>
-                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">3D Tour/Map</a>
-                    </li>
-                  </ul>
-                </div>
-              )}
-            </div>
 
-          </ul>
+                {/* About Us Dropdown */}
+                <div className="px-2 py-1  rounded-lg relative">
+                  <button
+                    className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
+                    onClick={toggleAbout}
+                  >
+                    <span>About Us</span>
+                    <span><IoIosArrowDown /></span>
+                  </button>
+                  {isAboutOpen && (
+                    <div className="z-10 text-left divide-y divide-gray-100 rounded-lg w-44 mt-2">
+                      <ul className="py-2 text-sm">
+                        <li>
+                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Our Story</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Team</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Careers</a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+                {/* Media DropDown */}
+                <div className="px-2 py-1 rounded-lg relative">
+                  <button
+                    className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
+                    onClick={toggleMedia}
+                  >
+                    <span>Media</span>
+                    <span><IoIosArrowDown /></span>
+                  </button>
+                  {isMediaOpen && (
+                    <div className="z-10 text-left divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
+                      <ul className="py-2 text-sm">
+                        <li>
+                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Images</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Videos</a>
+                        </li>
+                        <li>
+                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">3D Tour/Map</a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
