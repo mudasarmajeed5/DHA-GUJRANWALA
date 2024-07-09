@@ -5,7 +5,7 @@ const Card = ({ heading, paragraph, buttonText, imageSrc }) => {
       <a href="#">
         <div className="overflow-hidden">
           <img
-            className="hover:scale-105 h-[330px] md:w-[260px] w-full object-cover object-center transition-transform duration-1000"
+            className="hover:scale-105 mx-auto h-[330px] md:w-[260px] w-full object-cover object-center transition-transform duration-1000"
             src={imageSrc}
             alt=""
           />
@@ -75,6 +75,7 @@ const cardsData = [
 const MultiImageSlider = () => {
   const settings = {
     dots: true,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
