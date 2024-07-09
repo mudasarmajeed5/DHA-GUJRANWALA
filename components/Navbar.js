@@ -1,11 +1,11 @@
 'use client'
 import "./Navbar.css"
-import { RiMenu3Line } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa6";
+import { SlGrid } from "react-icons/sl";
 import { IoCallSharp } from "react-icons/io5";
 import { useRouter } from "next/navigation";
 const Navbar = () => {
@@ -199,7 +199,7 @@ const Navbar = () => {
 
       <div className="place-self-center justify-self-end">
         <div className="md:hidden justify-center text-2xl flex items-center">
-          <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">{DropDown ? <RxCross1 className="text-white" /> : <RiMenu3Line />}</span>
+          <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">{DropDown ? <RxCross1 className="text-white" /> : <SlGrid />}</span>
           <div className="flex flex-col gap-3">
             <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white`}>
               <div className="mt-[15%] px-2">
@@ -232,7 +232,7 @@ const Navbar = () => {
                           </span>
 
                           {isOngoingProjectsOpen && (
-                            <div className="relative z-10 divide-y divide-gray-100 h-0 rounded-lg w-44 mt-2">
+                            <div className="relative z-10 divide-y divide-gray-100 rounded-lg w-44 mt-2">
                               <ul className="py-2 text-sm">
                                 <li>
                                   <a href="/2marlacommercial" className="block py-2 px-2 hover:underline underline-offset-4">2 Marla Commercial</a>

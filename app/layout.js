@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
               <Script
                 src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
               />
+              <Script src="https://cdn.lordicon.com/lordicon.js"/>
             </body>
           </html>
           );

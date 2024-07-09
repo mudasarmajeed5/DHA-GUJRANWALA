@@ -61,7 +61,14 @@ export default function Home() {
           <option value="15marla">70M</option>
           <option value="1kanal">100M</option>
         </select>
-        <button className="text-white bg-green-700 hover:bg-green-900 hover:text-white px-4 py-1 rounded">Search</button>
+        <button className="text-white bg-white px-2 py-1 rounded flex gap-1 items-center">
+          <span className="text-black">Search</span>
+        <lord-icon
+          src="https://cdn.lordicon.com/kkvxgpti.json"
+          trigger="hover"
+          style={{ width: "20px", height: "20px"}}
+        ></lord-icon>
+        </button>
       </div>
 
       <div className="py-2 md:mt-[20vh]">
@@ -85,9 +92,13 @@ export default function Home() {
     {showButton && (
       <div
         onClick={scrollToTop}
-        className='fixed bottom-4 left-2 z-50 border-black hover:border-green-500 hover:bg-black hover:text-white p-2 border-2 rounded-full cursor-pointer shadow-lg'
+        className='fixed bottom-1 md:bottom-2 left-2 z-50 cursor-pointer'
       >
-        <span className=""><FaArrowUp /></span>
+        <span><lord-icon
+          src="https://cdn.lordicon.com/dwoxxgps.json"
+          trigger="hover"
+          style={{ width: "45px", height: "45px" }}
+        ></lord-icon></span>
       </div>)
     }
     {/* Search categories of homes */}
