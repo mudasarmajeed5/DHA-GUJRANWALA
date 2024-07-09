@@ -26,9 +26,9 @@ const TwoMarlaCommercial = () => {
                 <div className='py-10'>
                     <h1 className="text-3xl lg:text-4xl text-center text-green-700 font-bold my-5">2 Marla Commercial by DHA Gujranwala</h1>
                     <div className="text-center w-full md:w-3/5 md:mx-auto">
-                        <span className="text-center py-2 text-black">Explore the world of DHA Gujranwala's 2 Marla Commercial Plots: Your business's gateway to success!</span>
+                        <span className="text-center py-2 text-black">Explore the world of DHA Gujranwalas 2 Marla Commercial Plots: Your businesss gateway to success!</span>
                         <p className='text-center my-5'>
-                            Own a prime commercial space in DHA Gujranwala's developed sectors. These 2 marla plots offer a unique opportunity to establish your business in a thriving community.
+                            Own a prime commercial space in DHA Gujranwalas developed sectors. These 2 marla plots offer a unique opportunity to establish your business in a thriving community.
                             <br />
                             For more information, contact the sales office.
                             <br />
