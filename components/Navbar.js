@@ -1,10 +1,10 @@
 'use client'
 import "./Navbar.css"
 import { IoIosArrowDown } from "react-icons/io";
-import { FaArrowRight } from "react-icons/fa";
-import { RxCross1 } from "react-icons/rx";
+import { FaArrowRight, FaPhone } from "react-icons/fa";
 import { useState } from "react";
-import { FaWhatsapp } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
+import { FaLocationDot, FaWhatsapp } from "react-icons/fa6";
 import { SlGrid } from "react-icons/sl";
 import { IoCallSharp } from "react-icons/io5";
 import { useRouter } from "next/navigation";
@@ -199,7 +199,11 @@ const Navbar = () => {
 
       <div className="place-self-center justify-self-end">
         <div className="md:hidden justify-center text-2xl flex items-center">
-          <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">{DropDown ? <RxCross1 className="text-white" /> : <SlGrid />}</span>
+          <div>
+            <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">
+              {DropDown ? <span className="flex gap-1 items-center">
+                <span className="text-white flex gap-2 font-extralight text-sm items-center"><FaLocationDot /> | <FaPhone /> |</span>
+                <RxCross2 className="text-white md" /> </span> : <SlGrid />}</span></div>
           <div className="flex flex-col gap-3">
             <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white`}>
               <div className="mt-[15%] px-2">
@@ -219,7 +223,7 @@ const Navbar = () => {
                         <li className="IsProjectsOpen">
                           <a href="#" className="px-2 py-2 flex justify-between items-center"><span>Upcoming</span><span><FaArrowRight /></span></a>
                         </li>
-                        <li className={`IsProjectsOpen ${isOngoingProjectsOpen ? 'border border-[#066192]':''}`}>
+                        <li className={`IsProjectsOpen ${isOngoingProjectsOpen ? 'border border-[#066192]' : ''}`}>
                           <span
                             href="#"
                             onClick={toggleOngoingProjects}
