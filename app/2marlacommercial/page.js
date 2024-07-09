@@ -28,7 +28,7 @@ const TwoMarlaCommercial = () => {
                     <h1 className="text-3xl lg:text-4xl text-center text-green-700 font-bold my-5">2 Marla Commercial by DHA Gujranwala</h1>
                     <div className="text-center w-full  md:w-3/5 md:mx-auto"><span className="text-center py-2 text-black">Explore the world of DHA Gujranwalas 2 Marla Commercial Plots: Your businesss gateway to success!</span>
                         <p className='text-center my-5'>
-                        Own a prime commercial space in DHA Gujranwalas developed sectors. These 2 marla plots offer a unique opportunity to establish your business in a thriving community. <br /> For more information <br /> contact the sales office. <br /> Thank you.</p>
+                            Own a prime commercial space in DHA Gujranwalas developed sectors. These 2 marla plots offer a unique opportunity to establish your business in a thriving community. <br /> For more information <br /> contact the sales office. <br /> Thank you.</p>
                     </div>
                 </div>
                 <div className="border my-3"></div>
@@ -103,10 +103,20 @@ const TwoMarlaCommercial = () => {
                 {/* Contact Page */}
                 <div
                     className={`fixed bottom-0 z-10 w-full gap-2 text-sm p-2 bg-green-900 flex justify-center items-center shadow-md transition-transform duration-500 ${show ? 'translate-y-0' : 'translate-y-full'}`}>
-                    <button className="border rounded-full bg-transparent border-white shadow-md hover:shadow-green-500 transition-all text-white px-4  py-2 flex items-center gap-1"><span><FaDownload/></span>Brochure<span></span></button>
-                    <button className="border rounded-full bg-transparent border-white shadow-md hover:shadow-green-500 transition-all text-white px-4 py-2">Enquire Now</button>
+                    <button className="border rounded-full bg-transparent border-white shadow-md hover:shadow-green-500 transition-all text-white px-4  py-1 flex items-center gap-1"><lord-icon
+                        src="https://cdn.lordicon.com/jkppkiom.json"
+                        trigger="loop"
+                        state="loop-triangle"
+                        colors="primary:#ffffff"
+                        style={{ width: "30px", height: "30px" }}>
+                    </lord-icon><span>Brochure</span></button>
+                    <button className="border flex gap-1 items-center rounded-full bg-transparent border-white shadow-md hover:shadow-green-500 transition-all text-white px-4 py-1"><lord-icon
+                        src="https://cdn.lordicon.com/rsvfayfn.json" colors="primary:#ffffff" trigger="loop"
+                        delay="2000"
+                        style={{ width: "30px", height: "30px" }}>
+                    </lord-icon><span>Enquire Now</span></button>
                 </div>
-            </div>
+            </div >
         </>
     )
 }
