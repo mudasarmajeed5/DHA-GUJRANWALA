@@ -1,4 +1,3 @@
-import React from 'react'
 import { MdOutlineConstruction } from "react-icons/md";
 import { FaFile, FaAddressCard, FaTableTennis, FaRegShareSquare, FaHome } from "react-icons/fa";
 import { IoLogoAppleAppstore } from "react-icons/io5";
@@ -54,7 +53,7 @@ const DownloadApp = () => {
                 <div className="playstore">
                     <h1 className="text-3xl text-center m-2 py-4">Download our App to connect with us</h1>
                     {/* Downloadable icons */}
-                    <ul className="flex gap-1 max-w-fit md:gap-4 rounded-md bg-gray-300 mx-auto justify-center">
+                    <ul className="flex max-w-fit md:gap-4 rounded-md bg-gray-300 mx-auto justify-center">
                         <li className="flex items-center hover:bg-gray-400 p-1 md:px-5 px-2 hover:cursor-pointer transition-all gap-2">
                             <span>
                                 <BiLogoPlayStore size={24} />

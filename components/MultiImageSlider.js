@@ -1,8 +1,4 @@
-import React from 'react';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import Slider from "react-slick";
 const Card = ({ heading, paragraph, buttonText, imageSrc }) => {
   return (
     <div className="min-w-sm mx-2 rounded-lg">

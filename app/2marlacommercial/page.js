@@ -1,6 +1,5 @@
 "use client"
 import { useState, useEffect } from 'react';
-import { FaDownload } from 'react-icons/fa';
 const TwoMarlaCommercial = () => {
     useEffect(() => {
         const handleScroll = () => {

@@ -1,7 +1,7 @@
 'use client'
 import "./Navbar.css"
 import { IoIosArrowDown } from "react-icons/io";
-import { FaArrowRight, FaPhone } from "react-icons/fa";
+import { FaArrowRight, FaPhone, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { FaLocationDot, FaWhatsapp } from "react-icons/fa6";
@@ -202,7 +202,7 @@ const Navbar = () => {
           <div>
             <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">
               {DropDown ? <span className="flex gap-1 items-center">
-                <span className="text-white flex gap-2 font-extralight text-sm items-center"><FaLocationDot /> | <FaPhone /> |</span>
+                <span className="text-white flex gap-2 font-extralight text-sm items-center"><FaSearch/> | <FaLocationDot /> | <FaPhone /> |</span>
                 <RxCross2 className="text-white md" /> </span> : <SlGrid />}</span></div>
           <div className="flex flex-col gap-3">
             <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white`}>
@@ -218,12 +218,12 @@ const Navbar = () => {
                     <span><IoIosArrowDown /></span>
                   </button>
                   {isProjectsOpen && (
-                    <div className="z-10 text-left divide-y divide-gray-100 rounded-lg w-4/5 mx-auto">
+                    <div className="z-10 text-left divide-y divide-gray-100 rounded-lg">
                       <ul className="py-2 text-sm">
                         <li className="IsProjectsOpen">
                           <a href="#" className="px-2 py-2 flex justify-between items-center"><span>Upcoming</span><span><FaArrowRight /></span></a>
                         </li>
-                        <li className={`IsProjectsOpen ${isOngoingProjectsOpen ? 'border border-[#066192]' : ''}`}>
+                        <li className={`IsProjectsOpen`}>
                           <span
                             href="#"
                             onClick={toggleOngoingProjects}
@@ -236,7 +236,7 @@ const Navbar = () => {
                           </span>
 
                           {isOngoingProjectsOpen && (
-                            <div className="relative z-10 divide-y divide-gray-100 rounded-lg w-44 mt-2">
+                            <div className="relative z-10 divide-y divide-gray-100">
                               <ul className="py-2 text-sm">
                                 <li>
                                   <a href="/2marlacommercial" className="block py-2 px-2 hover:underline underline-offset-4">2 Marla Commercial</a>

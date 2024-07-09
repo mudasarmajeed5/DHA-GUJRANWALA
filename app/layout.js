@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 import Script from "next/script";
@@ -13,14 +15,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-              <Navbar />
-              {children}
-              <Footer />
-              <Script
-                src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
-              />
-              <Script src="https://cdn.lordicon.com/lordicon.js"/>
-            </body>
-          </html>
-          );
+        <Navbar />
+        {children}
+        <Footer />
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+          strategy="lazyOnload"
+        />
+        <Script
+          src="https://cdn.lordicon.com/lordicon.js"
+          strategy="lazyOnload"
+        />
+      </body>
+    </html>
+  );
 }
