@@ -134,7 +134,7 @@ const Navbar = () => {
         {/* DHA Assist Dropdown */}
         <div className="px-2 py-1 rounded-lg relative">
           <button
-            className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
+            className="getquote hover:-translate-y-[1px] hover:text-green-500 transition-all flex justify-center items-center"
             onMouseEnter={() => toggleDha(true)}
             onMouseLeave={() => toggleDha(false)}
           >
@@ -193,7 +193,7 @@ const Navbar = () => {
         {/* About Us Dropdown */}
         <div className="px-2 py-1 rounded-lg relative">
           <button
-            className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
+            className="getquote hover:-translate-y-[1px] hover:text-green-500 transition-all flex justify-center items-center"
             onMouseEnter={() => toggleAbout(true)}
             onMouseLeave={() => toggleAbout(false)}
           >
@@ -214,7 +214,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/a" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
+                  <a href="/aboutus" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Leaders</span>
                     <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
@@ -233,7 +233,7 @@ const Navbar = () => {
         {/* Media DropDown */}
         <div className="px-2 py-1 rounded-lg relative">
           <button
-            className="getquote hover:-translate-y-[1px] transition-all flex justify-center items-center"
+            className="getquote hover:-translate-y-[1px] hover:text-green-500 transition-all flex justify-center items-center"
             onMouseEnter={() => toggleMedia(true)}
             onMouseLeave={() => toggleMedia(false)}
           >
@@ -284,8 +284,8 @@ const Navbar = () => {
           <div>
             <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">
               {DropDown ? <span className="flex gap-1 items-center">
-                <span className="text-white flex gap-2 font-extralight text-sm items-center"><FaSearch /> | <FaLocationDot /> | <FaPhone /> |</span>
-                <RxCross2 className="text-white md" /> </span> : <SlGrid />}</span></div>
+                <span className="text-white relative z-20 flex gap-2 font-extralight text-sm items-center"><FaSearch /> | <FaLocationDot /> | <FaPhone /> |</span>
+                <RxCross2 className="text-white md relative z-20" /> </span> : <SlGrid />}</span></div>
           <div className="flex flex-col gap-3">
             <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white`}>
               <div className="mt-[15%] px-2">
@@ -294,7 +294,7 @@ const Navbar = () => {
                 <div className="px-2 py-1 rounded-lg relative">
                   <button
                     className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
-                    onClick={toggleProjects}
+                    onClick={()=>toggleProjects(!isProjectsOpen)}
                   >
                     <span>Projects</span>
                     <span><IoIosArrowDown /></span>
@@ -308,7 +308,7 @@ const Navbar = () => {
                         <li className={`IsProjectsOpen`}>
                           <span
                             href="#"
-                            onClick={toggleOngoingProjects}
+                            onClick={()=>toggleOngoingProjects(!isOngoingProjectsOpen)}
                             className="hover:cursor-pointer items-center px-2 py-2 flex justify-between"
                           >
                             <span>Ongoing Projects</span>
@@ -348,7 +348,7 @@ const Navbar = () => {
                 <div className="px-2 py-1 rounded-lg relative">
                   <button
                     className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
-                    onClick={toggleDha}
+                    onClick={()=>toggleDha(!isDhaOpen)}
                   >
                     <span>DHA Assist</span>
                     <span><IoIosArrowDown /></span>
@@ -383,7 +383,7 @@ const Navbar = () => {
                 <div className="px-2 py-1  rounded-lg relative">
                   <button
                     className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
-                    onClick={toggleAbout}
+                    onClick={()=>toggleAbout(!isAboutOpen)}
                   >
                     <span>About Us</span>
                     <span><IoIosArrowDown /></span>
@@ -395,7 +395,7 @@ const Navbar = () => {
                           <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Our Story</a>
                         </li>
                         <li>
-                          <a href="/a" className="block px-2 hover:underline underline-offset-4 py-2">Leaders</a>
+                          <a href="/aboutus" className="block px-2 hover:underline underline-offset-4 py-2">Leaders</a>
                         </li>
                         <li>
                           <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Careers</a>
@@ -408,7 +408,7 @@ const Navbar = () => {
                 <div className="px-2 py-1 rounded-lg relative">
                   <button
                     className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
-                    onClick={toggleMedia}
+                    onClick={()=>toggleMedia(!isMediaOpen)}
                   >
                     <span>Media</span>
                     <span><IoIosArrowDown /></span>

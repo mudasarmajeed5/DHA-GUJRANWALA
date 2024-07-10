@@ -3,7 +3,10 @@ import React from 'react'
 const Contactform = () => {
   return (
     <section className='flex md:flex-row flex-col items-center justify-around py-16'>
-      <div className='text-4xl md:my-auto mb-5 text-green-700 underline underline-offset-4'><img src="/contact-us-1.jpg" width={420} alt="" /></div>
+      <div className='text-4xl md:my-auto mb-5 text-green-700 underline underline-offset-4'>
+        <div className="text-center text-3xl">Contact Us</div>
+        <img src="/contact-us-1.jpg" width={420} alt="" />
+        </div>
       <div>
         <form className="max-w-md mx-auto">
           <div className="relative z-0 w-full mb-5 group">

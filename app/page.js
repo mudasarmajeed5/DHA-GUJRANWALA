@@ -1,11 +1,15 @@
 'use client'
 import { useState, useEffect } from "react";
 import Contactform from "@/components/Contactform";
-import { FaArrowUp } from "react-icons/fa6";
 import Carousel from "@/components/Carousel";
 import DownloadApp from "@/components/DownloadApp";
 import MultiImageSlider from "@/components/MultiImageSlider";
 import { IoLogoWhatsapp } from "react-icons/io";
+import InterestCaculator from "@/components/AdditionalComponents/InterestCaculator";
+import FAQs from "@/components/AdditionalComponents/FAQs";
+import UpcomingEvents from "@/components/AdditionalComponents/UpcomingEvents";
+import CreateAccount from "@/components/AdditionalComponents/CreateAccount";
+import WhyChooseUs from "@/components/AdditionalComponents/WhyChooseUs";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -43,7 +47,7 @@ export default function Home() {
     <main className="min-h-screen relative">
       <div className="hidden rounded-full mt-[-13vh] md:flex max-w-fit flex-row gap-4 py-2 bg-[#ffffffa8] mx-auto w-60vw justify-start px-8 items-center">
         <label htmlFor="propertyType" className="text-black">Property Type</label>
-        <select id="propertyType" name="propertyType" className="border rounded-md py-1  border-gray-300 p-2">
+        <select id="propertyType" name="propertx`yType" className="border rounded-md py-1  border-gray-300 p-2">
           <option value="residential">Residential</option>
           <option value="commercial">Commercial</option>
         </select>
@@ -79,8 +83,11 @@ export default function Home() {
       <MultiImageSlider/>
       </div>
       {/* <Gallery/> */}
+      <UpcomingEvents/>
+      <WhyChooseUs/>
       <DownloadApp/>
       <div className="bg-gray-700 border mt-10 mb-5"></div>
+      <CreateAccount/>
       <Contactform/>
       {/* contact from */}
 
@@ -141,6 +148,9 @@ export default function Home() {
 
       </div>
     )}
+    <FAQs/>
+    <InterestCaculator/>
+
   </>
   );
 }
