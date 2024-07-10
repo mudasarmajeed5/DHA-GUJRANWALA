@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaArrowRight, FaPhone, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-import { FaLocationDot, FaWhatsapp } from "react-icons/fa6";
+import { FaLocationDot, FaMapLocationDot, FaWhatsapp } from "react-icons/fa6";
 import { SlGrid } from "react-icons/sl";
 import { IoCallSharp } from "react-icons/io5";
 import { useRouter } from "next/navigation";
@@ -284,8 +284,7 @@ const Navbar = () => {
           <div>
             <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">
               {DropDown ? <span className="flex gap-1 items-center">
-                <span className="text-white relative z-20 flex gap-2 font-extralight text-sm items-center"><FaSearch /> | <FaLocationDot /> | <FaPhone /> |</span>
-                <RxCross2 className="text-white md relative z-20" /> </span> : <SlGrid />}</span></div>
+                <RxCross2 className="text-white md relative z-20" /> </span> : <span className="flex gap-1 items-center"><FaSearch/> | <FaMapLocationDot/> | <FaPhone/> | <SlGrid /></span>}</span></div>
           <div className="flex flex-col gap-3">
             <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white`}>
               <div className="mt-[15%] px-2">

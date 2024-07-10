@@ -5,7 +5,7 @@ const CreateAccount = () => {
         <>
             <div className="flex justify-around md:flex-row flex-col gap-2 items-start p-8">
                 {/* Signup Column */}
-                <div className="w-1/2 p-6">
+                <div className="md:w-1/2 w-full p-6">
                     <h2 className="text-green-500 text-lg mb-4">Signup to Get Personalized Experience</h2>
                     <form className="space-y-4">
                         <div className="flex flex-col">
@@ -28,7 +28,7 @@ const CreateAccount = () => {
                 </div>
 
                 {/* Status Column */}
-                <div className="w-1/2 p-6 border-l border-l-black">
+                <div className="md:w-1/2 w-full p-6 border-t border-t-black md:border-l border-l-black">
                     <h2 className="text-green-500 text-lg mb-4">Track Your Application Status</h2>
                     <form className="space-y-4">
                         <div className="flex flex-col">

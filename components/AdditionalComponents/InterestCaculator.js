@@ -94,7 +94,7 @@ const InterestCaculator = () => {
                         Next
                     </button>
                 </div>
-                <div className="bg-green-100 p-6 rounded-lg shadow-md w-1/5 mx-auto">
+                <div className="bg-green-100 p-6 rounded-lg shadow-md min-w-fit mx-auto">
                     <h3 className="text-xl font-bold text-green-700 mb-4">
                         Monthly Payment
                     </h3>

@@ -22,9 +22,9 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="w-full md:w-1/4 flex flex-col">
-          <div className="text-black pl-[20%] pr-3 p-4 flex-1 bg-[#F1F1F1]">
-            <h2 className="text-2xl text-right font-bold">WHY CHOOSE US?</h2>
-            <p className="text-muted-foreground text-right">Everyday we work hard to make life of our clients better and happier.</p>
+          <div className="text-black md:pl-[20%] md:pr-3 p-4 flex-1 bg-[#F1F1F1]">
+            <h2 className="text-2xl text-left md:text-right font-bold">WHY CHOOSE US?</h2>
+            <p className="text-muted-foreground text-left md:text-right">Everyday we work hard to make life of our clients better and happier.</p>
           </div>
           <div className="bg-[#28756B] text-white text-secondary-foreground p-4 flex-1">
             <img aria-hidden="true" alt="calendar-icon" src="https://openui.fly.dev/openui/24x24.svg?text=📅" className="mb-2 w-8 h-8" />
