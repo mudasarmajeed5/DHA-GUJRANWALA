@@ -1,37 +1,39 @@
 const Footer = () => {
   return (
     <>
-      <footer className="bg-gray-100 mt-10 lg:grid lg:grid-cols-5">
-        <div className="relative block h-32 lg:col-span-2 lg:h-full">
+      <footer className="bg-gradient-to-r from-green-900 via-green-700 to-teal-600  mt-10 lg:grid lg:grid-cols-5">
+        <div className="relative block h-52 lg:col-span-2 lg:h-full overflow-hidden">
           <img
             src="https://www.dreamhomes.com.pk/img/blog/dha-gujranwala-993x515.jpg"
             alt=""
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover scale-105 hover:scale-110 transition-transform duration-1000"
           />
         </div>
         <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div>
               <p>
-                <span className="text-xs uppercase tracking-wide text-gray-500">
+                <span className="text-xs uppercase tracking-wide text-white">
                   {" "}
                   Call us{" "}
                 </span>
                 <a
                   href="#"
-                  className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
+                  className="block text-2xl font-medium text-white hover:opacity-75 sm:text-3xl"
                 >
                   0324 1116262
                 </a>
               </p>
-              <ul className="mt-8 space-y-1 text-sm text-gray-700">
+              <ul className="mt-8 space-y-1 text-sm text-white">
                 <li>Monday to Friday: 10am - 5pm</li>
                 <li>Weekend: 10am - 3pm</li>
-                <li className="flex items-center"><lord-icon
+                <li><a href="mailto:accts04@dhagwa.com"><span className="hover:border-white border border-transparent flex gap-1 items-center max-w-fit px-3 bg-green-600 py-1 rounded-md text-white"><lord-icon
                   src="https://cdn.lordicon.com/nzixoeyk.json"
-                  trigger="hover"
-                  style={{ width: 30, height: 30 }}
-                ></lord-icon> <a href="mailto:accts04@dhagwa.com">Email Us</a></li>
+                  trigger="loop"
+                  delay='2000'
+                  colors="primary:#ffffff"
+                  style={{ width: 22, height: 22 }}
+                ></lord-icon>Email us</span></a></li>
               </ul>
               <ul className="mt-8 flex gap-6">
                 <li>
@@ -39,7 +41,7 @@ const Footer = () => {
                     href="#"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-700 transition hover:opacity-75"
+                    className="text-white transition hover:opacity-75"
                   >
                     <span className="sr-only">Facebook</span>
                     <svg
@@ -61,7 +63,7 @@ const Footer = () => {
                     href="#"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-700 transition hover:opacity-75"
+                    className="text-white transition hover:opacity-75"
                   >
                     <span className="sr-only">Instagram</span>
                     <svg
@@ -83,7 +85,7 @@ const Footer = () => {
                     href="#"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-700 transition hover:opacity-75"
+                    className="text-white transition hover:opacity-75"
                   >
                     <span className="sr-only">Twitter</span>
                     <svg
@@ -101,7 +103,7 @@ const Footer = () => {
                     href="#"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-700 transition hover:opacity-75"
+                    className="text-white transition hover:opacity-75"
                   >
                     <span className="sr-only">GitHub</span>
                     <svg
@@ -123,7 +125,7 @@ const Footer = () => {
                     href="#"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-700 transition hover:opacity-75"
+                    className="text-white transition hover:opacity-75"
                   >
                     <span className="sr-only">Dribbble</span>
                     <svg
@@ -144,12 +146,12 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
-                <p className="font-medium text-gray-900">Services</p>
+                <p className="font-medium text-white">Services</p>
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       {" "}
                       Get in Touch{" "}
@@ -158,7 +160,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       {" "}
                       Company Review{" "}
@@ -167,7 +169,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       {" "}
                       Accounts Review{" "}
@@ -176,7 +178,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       {" "}
                       Consulting{" "}
@@ -185,7 +187,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       {" "}
                       Finance Calculator{" "}
@@ -194,12 +196,12 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <p className="font-medium text-gray-900">DHA GUJRANWALA</p>
+                <p className="font-medium text-white">DHA GUJRANWALA</p>
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       {" "}
                       About{" "}
@@ -208,7 +210,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       {" "}
                       Meet the Team{" "}
@@ -217,7 +219,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       {" "}
                       Accounts Review{" "}
@@ -231,25 +233,25 @@ const Footer = () => {
             <div className="sm:flex sm:items-center sm:justify-between">
               <ul className="flex flex-wrap gap-4 text-xs">
                 <li>
-                  <a href="#" className="text-gray-500 transition hover:opacity-75">
+                  <a href="#" className="text-white transition hover:opacity-75">
                     {" "}
                     Terms &amp; Conditions{" "}
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-500 transition hover:opacity-75">
+                  <a href="#" className="text-white transition hover:opacity-75">
                     {" "}
                     Privacy Policy{" "}
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-500 transition hover:opacity-75">
+                  <a href="#" className="text-white transition hover:opacity-75">
                     {" "}
                     Cookies{" "}
                   </a>
                 </li>
               </ul>
-              <p className="mt-8 text-xs text-gray-500 sm:mt-0">
+              <p className="mt-8 text-xs text-white sm:mt-0">
                 © 2022. Company Name. All rights reserved.
               </p>
             </div>

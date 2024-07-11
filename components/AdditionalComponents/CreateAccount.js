@@ -28,7 +28,7 @@ const CreateAccount = () => {
                 </div>
 
                 {/* Status Column */}
-                <div className="md:w-1/2 w-full p-6 border-t border-t-black md:border-l border-l-black">
+                <div className="md:w-1/2 w-full p-6 border border-t-black md:border-t-transparent md:border-l-black">
                     <h2 className="text-green-500 text-lg mb-4">Track Your Application Status</h2>
                     <form className="space-y-4">
                         <div className="flex flex-col">

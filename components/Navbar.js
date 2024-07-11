@@ -282,9 +282,21 @@ const Navbar = () => {
       <div className="place-self-center justify-self-end">
         <div className="md:hidden justify-center text-2xl flex items-center">
           <div>
-            <span onClick={() => { setDropDown(!DropDown); }} className="z-10 relative">
-              {DropDown ? <span className="flex gap-1 items-center">
-                <RxCross2 className="text-white md relative z-20" /> </span> : <span className="flex gap-1 items-center"><FaSearch/> | <FaMapLocationDot/> | <FaPhone/> | <SlGrid /></span>}</span></div>
+            <span className="z-10 relative">
+              {DropDown ? (
+                  <RxCross2 onClick={() => setDropDown(!DropDown)} className="text-white md relative z-20" />
+              ) : (
+                <span className="flex gap-1 items-center">
+                  <FaSearch /> |
+                  <FaMapLocationDot /> |
+                  <FaPhone />| 
+                  <span onClick={() => setDropDown(!DropDown)} className="cursor-pointer">
+                    <SlGrid />
+                  </span>
+                </span>
+              )}
+            </span>
+          </div>
           <div className="flex flex-col gap-3">
             <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white`}>
               <div className="mt-[15%] px-2">
@@ -293,7 +305,7 @@ const Navbar = () => {
                 <div className="px-2 py-1 rounded-lg relative">
                   <button
                     className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
-                    onClick={()=>toggleProjects(!isProjectsOpen)}
+                    onClick={() => toggleProjects(!isProjectsOpen)}
                   >
                     <span>Projects</span>
                     <span><IoIosArrowDown /></span>
@@ -307,7 +319,7 @@ const Navbar = () => {
                         <li className={`IsProjectsOpen`}>
                           <span
                             href="#"
-                            onClick={()=>toggleOngoingProjects(!isOngoingProjectsOpen)}
+                            onClick={() => toggleOngoingProjects(!isOngoingProjectsOpen)}
                             className="hover:cursor-pointer items-center px-2 py-2 flex justify-between"
                           >
                             <span>Ongoing Projects</span>
@@ -347,7 +359,7 @@ const Navbar = () => {
                 <div className="px-2 py-1 rounded-lg relative">
                   <button
                     className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
-                    onClick={()=>toggleDha(!isDhaOpen)}
+                    onClick={() => toggleDha(!isDhaOpen)}
                   >
                     <span>DHA Assist</span>
                     <span><IoIosArrowDown /></span>
@@ -382,7 +394,7 @@ const Navbar = () => {
                 <div className="px-2 py-1  rounded-lg relative">
                   <button
                     className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
-                    onClick={()=>toggleAbout(!isAboutOpen)}
+                    onClick={() => toggleAbout(!isAboutOpen)}
                   >
                     <span>About Us</span>
                     <span><IoIosArrowDown /></span>
@@ -407,7 +419,7 @@ const Navbar = () => {
                 <div className="px-2 py-1 rounded-lg relative">
                   <button
                     className="getquote1 w-full hover:-translate-y-[1px] transition-all flex justify-between items-center"
-                    onClick={()=>toggleMedia(!isMediaOpen)}
+                    onClick={() => toggleMedia(!isMediaOpen)}
                   >
                     <span>Media</span>
                     <span><IoIosArrowDown /></span>

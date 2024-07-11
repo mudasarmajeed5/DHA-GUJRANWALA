@@ -5,7 +5,7 @@ const About = () => {
     return (
         <>
        
-        <a href="https://wa.me/923441234567" className="fixed bottom-2 right-2 p-1 rounded-full text-5xl hover:text-green-800 text-green-600 flex gap-2"><IoLogoWhatsapp /></a>
+        <a href="https://wa.me/923441234567" className="fixed  bottom-2 right-2 p-1 rounded-full text-5xl hover:text-green-200 transition-color duration-300 text-green-400 flex gap-2"><IoLogoWhatsapp /></a>
             <div className="flex text-center md:flex-row flex-col bg-gray-300 py-28 justify-center items-center gap-32 aboutus">
                 <img className='md:w-[400px] w-[300px]' src="/dhalogo.png" alt="" />
                 <div className='flex md:w-1/3 w-9/12 flex-col justify-start'>
