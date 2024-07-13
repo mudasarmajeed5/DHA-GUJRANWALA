@@ -3,8 +3,8 @@ import React from 'react'
 const Contactform = () => {
   return (
     <section className='flex md:flex-row flex-col items-center justify-around py-16'>
-      <div className='text-4xl md:my-auto mb-5 text-green-700 underline underline-offset-4'>
-        <div className="text-center text-3xl">Contact Us</div>
+      <div className='text-4xl md:my-auto mb-5 text-[--secondary-button] underline underline-offset-4'>
+        <div className="text-center text-[--secondary-button] font-bold my-2 text-3xl">Contact Us</div>
         <img src="/contact-us-1.jpg" width={420} alt="" />
         </div>
       <div>
@@ -128,7 +128,7 @@ const Contactform = () => {
           </div>
           <button
             type="submit"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center" >
+            className="text-white bg-[--secondary-button] hover:opacity-90 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center" >
             Submit
           </button>
         </form>

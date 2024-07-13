@@ -3,11 +3,11 @@
         opacity: 1;
         width: 100vw;
         height: 100vh;
-        background-color:#00263a;
+        background-color:var(--bg-color);
     }
 }
 .IsProjectsOpen {
-    border-bottom: 1px solid #1095dd;
+    border-bottom: 1px solid var(--secondary-button);
 }
 
 .navbar-name {
@@ -17,14 +17,16 @@
 .getquote {
     transition:all 0.2s ease;
 }
+.getquote:hover{
+    color: var(--secondary-button);
+}
 .getquote1{
     transition:all 0.2s ease;
-    border-bottom: 1px solid #066192;
+    border-bottom: 1px solid var(--secondary-button);
     padding: 5px 10px;
 }
 .getquote1:hover {
-    background-color: #066192;
-
+    background-color: var(--secondary-button);
 }
 
 .HamBurger_DropDown {

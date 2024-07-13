@@ -10,11 +10,22 @@ import FAQs from "@/components/AdditionalComponents/FAQs";
 import UpcomingEvents from "@/components/AdditionalComponents/UpcomingEvents";
 import CreateAccount from "@/components/AdditionalComponents/CreateAccount";
 import WhyChooseUs from "@/components/AdditionalComponents/WhyChooseUs";
-
+import { CgDarkMode } from "react-icons/cg";
+import { MdLightMode } from "react-icons/md";
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+
   const [showButton, setShowButton] = useState(false);
   const [showMobileDiv, setShowMobileDiv] = useState(false);
   const [showSearchDiv, setShowSearchDiv] = useState(false);
+  const toggleDarkMode = () => {
+    if (darkMode) {
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+    }
+    setDarkMode(!darkMode);
+  };
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
@@ -41,54 +52,56 @@ export default function Home() {
     });
   };
   return (<>
-    <marquee behavior="" direction="horizontal" className='text-white bg-green-700'>DHA Gujranwala has introduced 2 marla commercial plots for sale in developed sectors. For more information, please contact the sales office. Thank you.</marquee>
-    <Carousel/>
+    <marquee behavior="" direction="horizontal" className='text-white bg-[--secondary-button]'>DHA Gujranwala has introduced 2 marla commercial plots for sale in developed sectors. For more information, please contact the sales office. Thank you.</marquee>
+    <Carousel />
     <button className="fixed rounded-md hover:text-green-800 md:hidden transition-all duration-300 p-1 right-2 bottom-2 text-5xl text-green-500 z-20"><IoLogoWhatsapp /></button>
     <main className="min-h-screen relative">
-      <div className="hidden rounded-full mt-[-13vh] md:flex max-w-fit flex-row gap-4 py-2 bg-[#ffffffa8] mx-auto w-60vw justify-start px-8 items-center">
+      <div className="hidden rounded-full mt-[-13vh] md:flex max-w-fit flex-row gap-4 py-2 bg-white mx-auto w-60vw justify-start px-8 items-center">
         <label htmlFor="propertyType" className="text-black">Property Type</label>
-        <select id="propertyType" name="propertx`yType" className="border rounded-md py-1  border-gray-300 p-2">
+        <select id="propertyType" name="propertx`yType" className="border rounded-md py-1 hover:bg-[--secondary-button]  border-gray-300 p-2">
           <option value="residential">Residential</option>
           <option value="commercial">Commercial</option>
         </select>
         <label htmlFor="propertySize" className="text-black">Property Size</label>
-        <select id="propertySize" name="propertySize" className="border rounded-md py-1  border-gray-300 p-2 ">
+        <select id="propertySize" name="propertySize" className="border rounded-md py-1 hover:bg-[--secondary-button]  border-gray-300 p-2 ">
           <option value="5marla">5 Marla</option>
           <option value="10marla">10 Marla</option>
           <option value="15marla">15 Marla</option>
           <option value="1kanal">1 Kanal</option>
         </select>
         <label htmlFor="pricerange" className="text-black">Price Range</label>
-        <select id="propertySize" name="propertySize" className="border rounded-md py-1 border-gray-300 p-2 ">
+        <select id="propertySize" name="propertySize" className="border rounded-md py-1 hover:bg-[--secondary-button] border-gray-300 p-2 ">
           <option value="5marla">30M</option>
           <option value="10marla">50M</option>
           <option value="15marla">70M</option>
           <option value="1kanal">100M</option>
         </select>
-        <button className="text-white bg-white px-2 py-1 rounded flex gap-1 items-center">
+        <button className="text-white bg-white px-2 py-1 hover:bg-[--secondary-button] rounded flex gap-1 items-center">
           <span className="text-black">Search</span>
-        <lord-icon
-          src="https://cdn.lordicon.com/kkvxgpti.json"
-          trigger="hover"
-          style={{ width: "20px", height: "20px"}}
-        ></lord-icon>
+          <lord-icon
+            src="https://cdn.lordicon.com/kkvxgpti.json"
+            trigger="hover"
+            style={{ width: "20px", height: "20px" }}
+          ></lord-icon>
         </button>
       </div>
 
-      <div className="py-2 md:mt-[20vh]">
+      <div className="py-2 md:mt-[20vh] text-[--secondary-button]">
         <div className="w-1/2 my-2 mx-auto md:text-left text-center md:mx-16">
-        <p className="text-lg my-5 md:text-left text-center underline font-bold">COMMUNITIES</p>
-        <h1 className="md:text-3xl md:text-left text-center  font-bold text-2xl">
-        FEATURED COMMUNITIES</h1></div>
-      <MultiImageSlider/>
+          <p className="text-lg my-5 md:text-left text-center underline font-bold">COMMUNITIES</p>
+          <h1 className="md:text-3xl md:text-left text-center  font-bold text-2xl">
+            FEATURED COMMUNITIES</h1></div>
+        <MultiImageSlider />
       </div>
       {/* <Gallery/> */}
-      <UpcomingEvents/>
-      <WhyChooseUs/>
-      <DownloadApp/>
+      <UpcomingEvents />
+      <WhyChooseUs />
       <div className="bg-gray-700 border mt-10 mb-5"></div>
-      <CreateAccount/>
-      <Contactform/>
+      <CreateAccount />
+      <DownloadApp />
+
+      <InterestCaculator />
+      <FAQs />
       {/* contact from */}
 
     </main>
@@ -104,14 +117,14 @@ export default function Home() {
         <span><lord-icon
           src="https://cdn.lordicon.com/dwoxxgps.json"
           trigger="hover"
-          style={{ width: "45px", height: "45px" }}
+          style={{ width: "45px", height: "45px", }}
         ></lord-icon></span>
       </div>)
     }
     {/* Search categories of homes */}
     {showMobileDiv && (
       <div className='z-10 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-4 md:hidden bg-white'>
-        <button onClick={toggleSearchDiv} className='bg-white text-black border border-black px-2 py-1'>
+        <button onClick={toggleSearchDiv} className='bg-white text-black border border-black px-2 py-1 hover:bg-[--secondary-button]'>
           {showSearchDiv ? 'Close menu' : 'Explore categories'}
         </button>
 
@@ -138,7 +151,7 @@ export default function Home() {
           <option value="1kanal">1 Kanal</option>
         </select>
         <label htmlFor="pricerange" className="text-white">Price Range</label>
-        <select id="propertySize" name="propertySize" className="border rounded-md py-1 bg-black p-2 ">
+        <select id="propertySize" name="propertySize" className="border rounded-md py-1 hover:bg-[--secondary-button] bg-black p-2 ">
           <option value="5marla">30M</option>
           <option value="10marla">50M</option>
           <option value="15marla">70M</option>
@@ -148,8 +161,15 @@ export default function Home() {
 
       </div>
     )}
-    <FAQs/>
-    <InterestCaculator/>
+    <span className="fixed md:bottom-4 bottom-20 text-red-950 text-2xl bg-[--secondary-button] rounded-full right-3"><button
+      onClick={toggleDarkMode}
+      className="p-2"
+    >
+      {darkMode ? <CgDarkMode /> : <MdLightMode />
+      }
+    </button></span>
+
+    <Contactform />
 
   </>
   );

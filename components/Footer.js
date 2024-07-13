@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <footer className="bg-gradient-to-r from-green-900 via-green-700 to-teal-600  mt-10 lg:grid lg:grid-cols-5">
+      <footer className="bg-[--secondary-button]  mt-10 lg:grid lg:grid-cols-5">
         <div className="relative block h-52 lg:col-span-2 lg:h-full overflow-hidden">
           <img
             src="https://www.dreamhomes.com.pk/img/blog/dha-gujranwala-993x515.jpg"
@@ -27,12 +27,12 @@ const Footer = () => {
               <ul className="mt-8 space-y-1 text-sm text-white">
                 <li>Monday to Friday: 10am - 5pm</li>
                 <li>Weekend: 10am - 3pm</li>
-                <li><a href="mailto:accts04@dhagwa.com"><span className="hover:border-white border border-transparent flex gap-1 items-center max-w-fit px-3 bg-green-600 py-1 rounded-md text-white"><lord-icon
+                <li><a href="mailto:accts04@dhagwa.com"><span className="hover:border-white flex gap-1 items-center max-w-fit bg-[--secondary-button] font-bold text-3xl py-1 rounded-md text-white"><lord-icon
                   src="https://cdn.lordicon.com/nzixoeyk.json"
                   trigger="loop"
                   delay='2000'
                   colors="primary:#ffffff"
-                  style={{ width: 22, height: 22 }}
+                  style={{ width: 42, height: 42 }}
                 ></lord-icon>Email us</span></a></li>
               </ul>
               <ul className="mt-8 flex gap-6">

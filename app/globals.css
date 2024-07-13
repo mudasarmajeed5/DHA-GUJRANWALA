@@ -3,13 +3,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --text-color:black;
-  --rich-black:#0d1317;
+:root {
+  --text-color: black;
+  --rich-black: #0d1317;
+  --bg-color: white;
+  --primary-button: #24221f; 
+  --secondary-button: #378334;
+  --download-app-green: green;
+  
 }
-body{
-  font-family: 'Poppins',sans-serif;
+
+.dark {
+  --text-color: #ffffff;
+  --bg-color: #000000;
+  --footer-orange:orange;
+  --rich-black: #d1c6c6;
+  --primary-button: #cccbc2;
+  --secondary-button: #e50914;
+  --download-app-green: red;
+
 }
+
+/* text-[--text-color] */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+}
+
 .socials {
   position: fixed;
   bottom: 10%;
@@ -18,11 +38,13 @@ body{
   flex-direction: column;
   gap: 5px;
 }
-.socials button{
+
+.socials button {
   position: relative;
   right: -85px;
   transition: all 0.2s ease;
 }
-.socials button:hover{
+
+.socials button:hover {
   background-color: black;
 }

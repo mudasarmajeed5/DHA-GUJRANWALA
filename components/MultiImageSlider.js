@@ -13,16 +13,16 @@ const Card = ({ heading, paragraph, buttonText, imageSrc }) => {
       </a>
       <div className="p-5 text-center">
         <a href="#">
-          <h5 className=" text-xl font-bold tracking-tight text-gray-900">
+          <h5 className=" text-xl font-bold tracking-tight text-[--text-color]">
             {heading}
           </h5>
         </a>
-        <p className="font-normal mb-2 text-gray-700 text-sm">
+        <p className="font-normal mb-2 text-[--primary-button] text-sm">
           {paragraph}
         </p>
         <a
           href="#"
-          className=" bg-gray-200 text-black hover:bg-gray-300 transition-all duration-200 px-2 py-1 rounded-sm"
+          className=" bg-[--secondary-button] rounded-full text-[--text-color] hover:opacity-90 transition-all duration-200 px-2 py-1"
         >
           {buttonText}
         </a>

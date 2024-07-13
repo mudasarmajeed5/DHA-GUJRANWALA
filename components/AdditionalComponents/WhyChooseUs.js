@@ -3,7 +3,7 @@ import React from 'react'
 const WhyChooseUs = () => {
   return (
     <>
-      <div className="flex flex-wrap py-10">
+      <div className="flex flex-wrap py-8">
         <div className="w-full md:w-1/4 bg-secondary text-secondary-foreground flex flex-col justify-around">
           <div className="bg-[#2F534F] h-full text-white p-4">
             <img aria-hidden="true" alt="star-icon" src="https://openui.fly.dev/openui/24x24.svg?text=⭐" className="mb-2 w-8 h-8" />

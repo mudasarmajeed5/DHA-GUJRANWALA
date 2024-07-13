@@ -6,13 +6,13 @@ const UpcomingEvents = () => {
 
       <div className='my-6 border'></div>
       <div className="p-6 bg-background text-foreground">
-        <h2 className="text-3xl font-semibold mb-4 text-green-500">Upcoming Events</h2>
+        <h2 className="text-3xl text-[--secondary-button] font-semibold mb-4">Upcoming Events</h2>
         <div className="flex items-start justify-start flex-wrap gap-4 mb-6">
           <div className="relative">
             <input
               type="text"
               placeholder="Search"
-              className="bg-input border border-border rounded-full py-2 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-primary"
+              className="bg-input border border-[--secondary-button] rounded-full py-2 px-4 pl-10 bg-[--bg-color] focus:outline-none focus:ring-2 focus:ring-primary"
             />
             <img
               aria-hidden="true"
@@ -21,15 +21,15 @@ const UpcomingEvents = () => {
               className="absolute left-3 top-1/2 transform -translate-y-1/2"
             />
           </div>
-          <button className="justify-center gap-1 border text-sm bg-secondary text-secondary-foreground px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-secondary/80">
+          <button className="justify-center gap-1 border text-sm border-[--secondary-button] text-[--text-color] px-4 py-2 rounded-full flex items-center space-x-2 hover:border-[--secondary-button]/80">
             <span>Date</span>
             <span><FaArrowDown /></span>
           </button>
-          <button className="justify-center gap-1 border text-sm bg-secondary text-secondary-foreground px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-secondary/80">
+          <button className="justify-center gap-1 border text-sm border-[--secondary-button] text-[--text-color] px-4 py-2 rounded-full flex items-center space-x-2 hover:border-[--secondary-button]/80">
             <span>Event type</span>
             <span><FaArrowDown /></span>
           </button>
-          <button className="justify-center gap-1 border text-sm bg-secondary text-secondary-foreground px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-secondary/80">
+          <button className="justify-center gap-1 border text-sm border-[--secondary-button] text-[--text-color] px-4 py-2 rounded-full flex items-center space-x-2 hover:border-[--secondary-button]/80">
             <span>Location</span>
             <span><FaArrowDown /></span>
           </button>
@@ -42,16 +42,16 @@ const UpcomingEvents = () => {
                 alt="Event 1 image"
                 className="rounded-t-lg"
               />
-              <span className="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded">
+              <span className="absolute top-2 left-2 bg-primary text-[--text-color] text-xs font-semibold px-2 py-1 rounded">
                 Featured
               </span>
             </div>
-            <div className="p-4">
+            <div className="p-4"> 
               <p className="text-muted-foreground mb-1">Dec 5 - Dec 8, 2024</p>
-              <h3 className="text-lg font-bold mb-2 text-green-500">
+              <h3 className="text-lg font-bold mb-2 text-[--secondary-button]">
                 ARY LAGUNA
               </h3>
-              <button className="bg-transparent border border-primary text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-primary-foreground text-sm">
+              <button className="bg-transparent border border-[--secondary-button] text-[--primary-button] px-4 py-2 rounded-full hover:bg-primary hover:text-[--text-color] text-sm">
                 Register Now
               </button>
             </div>
@@ -63,7 +63,7 @@ const UpcomingEvents = () => {
                 alt="Event 2 image"
                 className="rounded-t-lg"
               />
-              <span className="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded">
+              <span className="absolute top-2 left-2 bg-primary text-[--text-color] text-xs font-semibold px-2 py-1 rounded">
                 Featured
               </span>
             </div>
@@ -71,10 +71,10 @@ const UpcomingEvents = () => {
               <p className="text-muted-foreground mb-1">
                 November 3 - November 7, 2024
               </p>
-              <h3 className="text-lg font-bold mb-2 text-green-500">
+              <h3 className="text-lg font-bold mb-2 text-[--secondary-button]">
                 INGURATION OF Gate 2
               </h3>
-              <button className="bg-transparent border border-primary text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-primary-foreground text-sm">
+              <button className="bg-transparent border border-[--secondary-button] text-[--primary-button] px-4 py-2 rounded-full hover:bg-primary hover:text-[--text-color] text-sm">
                 Register Now
               </button>
             </div>
@@ -86,7 +86,7 @@ const UpcomingEvents = () => {
                 alt="Event 3 image"
                 className="rounded-t-lg"
               />
-              <span className="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded">
+              <span className="absolute top-2 left-2 bg-primary text-[--text-color] text-xs font-semibold px-2 py-1 rounded">
                 Featured
               </span>
             </div>
@@ -94,10 +94,10 @@ const UpcomingEvents = () => {
               <p className="text-muted-foreground mb-1">
                 November 17 - November 21, 2024
               </p>
-              <h3 className="text-lg font-bold mb-2 text-green-500">
+              <h3 className="text-lg font-bold mb-2 text-[--secondary-button]">
                 MUSICAL NIGHT
               </h3>
-              <button className="bg-transparent border border-primary text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-primary-foreground text-sm">
+              <button className="bg-transparent border border-[--secondary-button] text-[--primary-button] px-4 py-2 rounded-full hover:bg-primary hover:text-[--text-color] text-sm">
                 Register Now
               </button>
             </div>

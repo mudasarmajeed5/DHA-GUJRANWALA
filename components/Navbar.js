@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaArrowRight, FaPhone, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-import { FaLocationDot, FaMapLocationDot, FaWhatsapp } from "react-icons/fa6";
+import { FaMapLocationDot, FaWhatsapp } from "react-icons/fa6";
 import { SlGrid } from "react-icons/sl";
 import { IoCallSharp } from "react-icons/io5";
 import { useRouter } from "next/navigation";
@@ -47,7 +47,7 @@ const Navbar = () => {
 
   const router = useRouter()
   return (
-    <div className='text-center bg-white sticky top-0 py-0 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
+    <div className='text-center bg-[--bg-color] sticky top-0 py-0 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
 
 
       <div onClick={() => router.push('/')} className="md:text-3xl text-2xl cursor-pointer underline-offset-4 navbar-name">
@@ -77,7 +77,7 @@ const Navbar = () => {
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Upcoming</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                     <span><FaArrowRight /></span>
                   </a>
                 </li>
@@ -88,7 +88,7 @@ const Navbar = () => {
                     className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group cursor-pointer"
                   >
                     <span>Ongoing Projects</span>
-                    <span className="absolute left-0 top-0 bottom-0 bg-green-500 z-[-100] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute left-0 top-0 bottom-0 bg-[--secondary-button] z-[-100] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                     <span><FaArrowRight /></span>
                   </a>
                   {isOngoingProjectsOpen && (
@@ -99,13 +99,13 @@ const Navbar = () => {
                     >
                       <ul className="py-2 text-sm text-gray-700">
                         <li>
-                          <a href="2-marla-commercial" className="block px-4 py-2 hover:bg-green-500 transition-all duration-300 ease-in-out">2 Marla Commercial</a>
+                          <a href="2-marla-commercial" className="block px-4 py-2 hover:bg-[--secondary-button] transition-all duration-300 ease-in-out">2 Marla Commercial</a>
                         </li>
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-green-500 transition-all duration-300 ease-in-out">4 Marla Commercial</a>
+                          <a href="#" className="block px-4 py-2 hover:bg-[--secondary-button] transition-all duration-300 ease-in-out">4 Marla Commercial</a>
                         </li>
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-green-500 transition-all duration-300 ease-in-out">6 Marla Commercial</a>
+                          <a href="#" className="block px-4 py-2 hover:bg-[--secondary-button] transition-all duration-300 ease-in-out">6 Marla Commercial</a>
                         </li>
                       </ul>
                     </div>
@@ -114,14 +114,14 @@ const Navbar = () => {
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Delivered</span>
-                    <span className="absolute left-0 top-0 bottom-0 bg-green-500 z-[-100] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute left-0 top-0 bottom-0 bg-[--secondary-button] z-[-100] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                     <span><FaArrowRight /></span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>JV Projects</span>
-                    <span className="absolute left-0 top-0 bottom-0 bg-green-500 z-[-100] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute left-0 top-0 bottom-0 bg-[--secondary-button] z-[-100] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                     <span><FaArrowRight /></span>
                   </a>
                 </li>
@@ -151,37 +151,37 @@ const Navbar = () => {
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Procedure</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Payment voucher</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Important notices</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Building control</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Forms</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Registered Dealers</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
               </ul>
@@ -210,19 +210,19 @@ const Navbar = () => {
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Our Story</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
                   <a href="/aboutus" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Leaders</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Careers</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
               </ul>
@@ -250,19 +250,19 @@ const Navbar = () => {
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Images</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Videos</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>3D Tour / Maps</span>
-                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-green-500 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
+                    <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
               </ul>
@@ -273,9 +273,9 @@ const Navbar = () => {
       </div>
 
       <div className="contact place-self-center md:flex hidden gap-1">
-        <button className="rounded-full px-2 border border-green-600 hover:bg-green-500 hover:text-white transition-all duration-300 text-sm flex gap-1 justify-center items-center"><span><IoCallSharp /></span><span>Sales Office</span></button>
-        <button className="rounded-full px-2 flex gap-1 justify-center items-center hover:bg-green-700 hover:text-white transition-all duration-300 text-sm py-1 border border-green-600"><span><FaWhatsapp /></span><span>Whatsapp</span></button>
-        <button className="rounded-full px-2 flex gap-1 justify-center items-center text-black border-green-600 transition-all duration-300 text-sm py-1 hover:text-white border hover:bg-green-900">Become JV Partner</button>
+        <button className="rounded-full px-2 border border-[--secondary-button] hover:bg-[--secondary-button] hover:text-white transition-all duration-300 flex gap-1 justify-center items-center"><span><IoCallSharp /></span><span>Sales Office</span></button>
+        <button className="rounded-full px-2 flex gap-1 justify-center items-center hover:bg-[--secondary-button] hover:text-white transition-all duration-300 py-1 border border-[--secondary-button]"><span><FaWhatsapp /></span><span>Whatsapp</span></button>
+        <button className="rounded-full px-2 flex gap-1 justify-center items-center text-[--text-color] transition-all duration-300 py-1 hover:text-white border border-[--secondary-button] hover:bg-[--secondary-button]">Become JV Partner</button>
       </div>
 
 
@@ -286,7 +286,7 @@ const Navbar = () => {
               {DropDown ? (
                   <RxCross2 onClick={() => setDropDown(!DropDown)} className="text-white md relative z-20" />
               ) : (
-                <span className="flex gap-1 items-center">
+                <span className="flex gap-1 text-[16px] text-[--secondary-button] font-extralight items-center">
                   <FaSearch /> |
                   <FaMapLocationDot /> |
                   <FaPhone />| 
@@ -298,7 +298,7 @@ const Navbar = () => {
             </span>
           </div>
           <div className="flex flex-col gap-3">
-            <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-white`}>
+            <ul className={`${DropDown ? 'HamBurger_DropDown ' : 'hidden'} text-[--text-color] bg-[--bg-color]`}>
               <div className="mt-[15%] px-2">
 
                 {/* Projects Dropdown */}
