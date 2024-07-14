@@ -1,16 +1,16 @@
-.carousel{
+.carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: rgb(212, 200, 200);   
+    background-color: rgb(212, 200, 200);
 }
 
-.carousel img{
+.carousel img {
     width: 100vw;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     width: 2.5rem;
     height: 2.5rem;
@@ -21,21 +21,26 @@
     transition: all 0.2s ease;
     cursor: pointer;
 }
-.arrow:hover{
+
+.arrow:hover {
     opacity: 1;
 }
-.arrow-left{
+
+.arrow-left {
     left: 1rem;
 }
-.arrow-right{
+
+.arrow-right {
     right: 1rem;
 }
-.indicators{
+
+.indicators {
     display: flex;
     position: absolute;
     bottom: 1rem;
 }
-.indicator{
+
+.indicator {
     background-color: white;
     height: 0.5rem;
     width: 0.5rem;
@@ -46,41 +51,69 @@
     margin: 0 0.2rem;
     cursor: pointer;
 }
-.slide-hidden{
+
+.slide-hidden {
     display: none;
 }
-.indicator-inactive{
+
+.indicator-inactive {
     background-color: rgb(41, 41, 41);
 }
 
-.Carousel-main{
+.Carousel-main {
     position: relative;
 }
-.Carousel-main img{
+
+.Carousel-main img {
     /* scale: 150%; */
     animation: scaledown 3s linear forwards;
 }
-@keyframes scaledown{
-    from{
+
+@keyframes scaledown {
+    from {
         scale: 120%;
     }
-    to{
+
+    to {
         scale: 100%;
     }
 }
-.Carouseltext{
+
+.Carouseltext {
     position: absolute;
-    bottom: 0%;
-    color: rgba(93, 29, 211, 0.849);
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    font-family: cursive;
-    font-weight: 100;
-    font-style: italic;
-    font-size: 50px;
+    transform: translate(-50%, -50%);
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 4.0rem;
+
 }
-@media only screen and (max-width:767px){
-    .Carouseltext{
+
+@media only screen and (max-width:767px) {
+    .Carouseltext {
         font-size: 30px;
     }
+}
+
+
+
+/*Shadow overlay */
+/* globals.css or relevant CSS file */
+.shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, .3) 60%,
+            rgba(0, 0, 0, 0.8) 100%);
+    pointer-events: none;
+    /* To ensure the overlay doesn't interfere with clicks */
 }

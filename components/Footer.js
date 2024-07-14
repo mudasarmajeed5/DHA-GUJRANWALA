@@ -3,6 +3,7 @@ const Footer = () => {
     <>
       <footer className="bg-[--secondary-button]  mt-10 lg:grid lg:grid-cols-5">
         <div className="relative block h-52 lg:col-span-2 lg:h-full overflow-hidden">
+          <div className="shadow-overlay1 z-20 relative"></div>
           <img
             src="https://www.dreamhomes.com.pk/img/blog/dha-gujranwala-993x515.jpg"
             alt=""

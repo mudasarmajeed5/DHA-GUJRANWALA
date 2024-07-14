@@ -9,7 +9,7 @@ import InterestCaculator from "@/components/AdditionalComponents/InterestCaculat
 import FAQs from "@/components/AdditionalComponents/FAQs";
 import UpcomingEvents from "@/components/AdditionalComponents/UpcomingEvents";
 import CreateAccount from "@/components/AdditionalComponents/CreateAccount";
-import WhyChooseUs from "@/components/AdditionalComponents/WhyChooseUs";
+// import WhyChooseUs from "@/components/AdditionalComponents/WhyChooseUs";
 import { CgDarkMode } from "react-icons/cg";
 import { MdLightMode } from "react-icons/md";
 export default function Home() {
@@ -24,6 +24,8 @@ export default function Home() {
     } else {
       document.documentElement.classList.add('dark');
     }
+    // Save the dark mode state to localStorage
+    localStorage.setItem('darkMode', JSON.stringify(!darkMode));
     setDarkMode(!darkMode);
   };
   useEffect(() => {
@@ -34,6 +36,11 @@ export default function Home() {
       } else {
         setShowButton(false);
         setShowMobileDiv(false);
+      }
+      const savedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
+      if (savedDarkMode) {
+        document.documentElement.classList.add('dark');
+        setDarkMode(true);
       }
     };
     window.addEventListener('scroll', handleScroll);
@@ -54,7 +61,7 @@ export default function Home() {
   return (<>
     <marquee behavior="" direction="horizontal" className='text-white bg-[--secondary-button]'>DHA Gujranwala has introduced 2 marla commercial plots for sale in developed sectors. For more information, please contact the sales office. Thank you.</marquee>
     <Carousel />
-    <button className="fixed rounded-md hover:text-green-800 md:hidden transition-all duration-300 p-1 right-2 bottom-2 text-5xl text-green-500 z-20"><IoLogoWhatsapp /></button>
+    <button className="fixed rounded-md hover:text-green-800 md:hidden transition-all duration-300 p-1 right-2 bottom-3 text-4xl text-green-500 z-20"><IoLogoWhatsapp /></button>
     <main className="min-h-screen relative">
       <div className="hidden rounded-full mt-[-13vh] md:flex max-w-fit flex-row gap-4 py-2 bg-white mx-auto w-60vw justify-start px-8 items-center">
         <label htmlFor="propertyType" className="text-black">Property Type</label>
@@ -88,15 +95,15 @@ export default function Home() {
 
       <div className="py-2 md:mt-[20vh] text-[--secondary-button]">
         <div className="w-1/2 my-2 mx-auto md:text-left text-center md:mx-16">
-          <p className="text-lg my-5 md:text-left text-center underline font-bold">COMMUNITIES</p>
-          <h1 className="md:text-3xl md:text-left text-center  font-bold text-2xl">
+          <p className="text-3xl my-5 md:text-left text-center underline font-bold">COMMUNITIES</p>
+          <h1 className="md:text-4xl md:text-left text-center font-bold text-2xl">
             FEATURED COMMUNITIES</h1></div>
         <MultiImageSlider />
       </div>
       {/* <Gallery/> */}
       <UpcomingEvents />
-      <WhyChooseUs />
-      <div className="bg-gray-700 border mt-10 mb-5"></div>
+      {/* <WhyChooseUs /> */}
+      {/* <div className="bg-gray-700 border mt-10 mb-5"></div> */}
       <CreateAccount />
       <DownloadApp />
 
@@ -123,12 +130,12 @@ export default function Home() {
     }
     {/* Search categories of homes */}
     {showMobileDiv && (
-      <div className='z-10 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-4 md:hidden bg-white'>
-        <button onClick={toggleSearchDiv} className='bg-white text-black border border-black px-2 py-1 hover:bg-[--secondary-button]'>
+      <div className='z-10 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-4 md:hidden bg-[--secondary-button]'>
+        <button onClick={toggleSearchDiv} className='rounded-full text-[--text-color] border border-black px-2 py-1'>
           {showSearchDiv ? 'Close menu' : 'Explore categories'}
         </button>
 
-        <button className='bg-white text-black border border-black px-4 py-2'>
+        <button className='text-[--text-color] rounded-full border border-black px-4 py-2'>
           Show More
         </button>
       </div>
@@ -161,7 +168,7 @@ export default function Home() {
 
       </div>
     )}
-    <span className="fixed md:bottom-4 bottom-20 text-red-950 text-2xl bg-[--secondary-button] rounded-full right-3"><button
+    <span className="fixed md:bottom-4 bottom-16 text-red-950 text-2xl bg-[--secondary-button] z-20 border-2 rounded-full right-3"><button
       onClick={toggleDarkMode}
       className="p-2"
     >

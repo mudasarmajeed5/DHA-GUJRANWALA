@@ -3,15 +3,16 @@ import React from 'react'
 const InterestCaculator = () => {
     return (
         <>
-        <div className="text-center w-4/5 mx-auto font-bold text-3xl py-10 text-[--secondary-button]">Make your calculations with ease</div>
-            <div className="flex flex-col lg:flex-row justify-center items-start">
-                <div className="bg-[--bg-color] p-6 rounded-lg shadow-md max-w-xl mx-auto lg:mr-6 lg:mb-0 mb-6">
-                    <h2 className="text-2xl font-bold text-[--secondary-button] mb-4">Property Calculator</h2>
-                    <div className="grid grid-cols-2 gap-4 mb-4 text-[--text-color]">
+         <div className='my-14 border'></div>
+        <div className="text-center w-4/5 mx-auto font-bold text-5xl py-10 text-[--secondary-button] uppercase">Make your calculations with ease</div>
+            <div className="flex flex-col justify-between lg:flex-row items-center">
+                <div className="bg-[--bg-color] w-1/2 p-6 rounded-lg lg:mr-6 lg:mb-0 mb-6">
+                    <h2 className="text-4xl font-bold text-[--secondary-button] mb-4">Property Calculator</h2>
+                    <div className="grid grid-cols-2 w-full gap-4 mb-4 text-[--text-color]">
                         <div>
                             <label
                                 htmlFor="property-type"
-                                className="block text-sm font-medium"
+                                className="block text-xl font-bold"
                             >
                                 Property Type*
                             </label>
@@ -26,7 +27,7 @@ const InterestCaculator = () => {
                             </select>
                         </div>
                         <div>
-                            <label htmlFor="property-value" className="block text-sm font-medium ">
+                            <label htmlFor="property-value" className="block text-xl font-bold ">
                                 Property Price
                             </label>
                             <input
@@ -38,13 +39,55 @@ const InterestCaculator = () => {
                         <div>
                             <label
                                 htmlFor="down-payment"
-                                className="block text-sm font-medium "
+                                className="block text-xl font-bold "
                             >
                                 Down Payment*
                             </label>
                             <input
                                 type="text"
-                                id="down-payment"
+                                id="down-fdsa"
+                                className="mt-1 block w-full p-2 border border-zinc-300 bg-[--bg-color] rounded-md"
+                                defaultValue="Rs. 50,000"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                htmlFor="down-charges"
+                                className="block text-xl font-bold "
+                            >
+                                Poccession Charges
+                            </label>
+                            <input
+                                type="text"
+                                id="down-dc"
+                                className="mt-1 block w-full p-2 border border-zinc-300 bg-[--bg-color] rounded-md"
+                                defaultValue="Rs. 50,000"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                htmlFor="down-charges"
+                                className="block text-xl font-bold "
+                            >
+                                DC Charges
+                            </label>
+                            <input
+                                type="text"
+                                id="down-transfer"
+                                className="mt-1 block w-full p-2 border border-zinc-300 bg-[--bg-color] rounded-md"
+                                defaultValue="Rs. 50,000"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                htmlFor="down-payment"
+                                className="block text-xl font-bold "
+                            >
+                                Transfer Charges
+                            </label>
+                            <input
+                                type="text"
+                                id="down-value"
                                 className="mt-1 block w-full p-2 border border-zinc-300 bg-[--bg-color] rounded-md"
                                 defaultValue="Rs. 50,000"
                             />
@@ -54,14 +97,14 @@ const InterestCaculator = () => {
                         <div>
                             <label
                                 htmlFor="interest-rate"
-                                className="block text-sm font-medium "
+                                className="block text-xl font-bold "
                             >
                                 Interest Rate*
                             </label>
                             <input
                                 type="range"
                                 id="interest-rate"
-                                className="mt-1 block w-full"
+                                className="mt-1 range-slider block w-full"
                                 min={0}
                                 max={10}
                                 step="0.01"
@@ -71,14 +114,14 @@ const InterestCaculator = () => {
                         <div>
                             <label
                                 htmlFor="loan-time"
-                                className="block text-sm font-medium "
+                                className="block text-xl font-bold "
                             >
                                 Loan Time*
                             </label>
                             <input
                                 type="range"
                                 id="loan-time"
-                                className="mt-1 block w-full"
+                                className="mt-1 range-slider block w-full"
                                 min={1}
                                 max={30}
                                 step={1}
@@ -86,16 +129,16 @@ const InterestCaculator = () => {
                             />
                         </div>
                     </div>
-                    <div className="flex justify-between items-center mb-4">
-                        <span className="text-sm ">4.25%</span>
-                        <span className="text-sm ">12 years</span>
+                    <div className="flex justify-between text-[--text-color] items-center mb-4">
+                        <span className="text-lg ">4.25%</span>
+                        <span className="text-lg ">12 years</span>
                     </div>
-                    <button className="bg-[--download-app-green] text-[var(--text-color)] p-2 rounded-full w-full">
+                    <button className="bg-[--download-app-green] text-[var(--text-color)] p-2 rounded-full text-4xl w-full">
                         Next
                     </button>
                 </div>
                 <div className="p-6 px-12 rounded-lg shadow-md min-w-fit mx-auto">
-                    <h3 className="text-xl font-bold text-[--secondary-button] mb-4">
+                    <h3 className="text-5xl font-bold text-[--secondary-button] mb-4">
                         Monthly Payment
                     </h3>
                     <p className="text-3xl font-bold text-[--secondary-button] mb-2">Rs. 1,8000</p>

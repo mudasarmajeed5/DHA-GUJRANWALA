@@ -4,12 +4,12 @@ const FAQs = () => {
     return (
         <>
         
-            <div className="max-w-screen-xl text-[--text-color] mx-auto px-5 bg-[--bg-color] min-h-sceen">
+            <div className="text-[--text-color] w-4/5 text-xl mx-auto px-5 bg-[--bg-color] min-h-sceen">
                 <div className="flex flex-col items-center">
                     <h2 className="font-bold text-5xl mt-5 tracking-tight text-[--secondary-button]">FAQs</h2>
                 </div>
-                <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
-                    <div className="py-5">
+                <div className="grid divide-y divide-neutral-200 mx-auto mt-8">
+                    <div className="py-5 hover:bg-[--secondary-button] transition-all duration-300">
                         <details className="group">
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                 <span> What are the Plot rates?</span>
@@ -34,7 +34,7 @@ const FAQs = () => {
                             </p>
                         </details>
                     </div>
-                    <div className="py-5">
+                    <div className="py-5 hover:bg-[--secondary-button] transition-all duration-300">
                         <details className="group">
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                 <span>What are the visiting hours for DHA Gujranwala?</span>
@@ -58,7 +58,7 @@ const FAQs = () => {
                             </p>
                         </details>
                     </div>
-                    <div className="py-5">
+                    <div className="py-5 hover:bg-[--secondary-button] transition-all duration-300">
                         <details className="group">
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                 <span>Contact information for the Finance Branch</span>
@@ -82,7 +82,7 @@ const FAQs = () => {
                             </p>
                         </details>
                     </div>
-                    <div className="py-5">
+                    <div className="py-5 hover:bg-[--secondary-button] transition-all duration-300">
                         <details className="group">
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                 <span>When will DHA handover the possession of plots?</span>
@@ -107,7 +107,7 @@ const FAQs = () => {
                             </p>
                         </details>
                     </div>
-                    <div className="py-5">
+                    <div className="py-5 hover:bg-[--secondary-button] transition-all duration-300">
                         <details className="group">
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                 <span>What is the current state of development in DHA Gujranwala?</span>
@@ -132,7 +132,7 @@ const FAQs = () => {
                             </p>
                         </details>
                     </div>
-                    <div className="py-5">
+                    <div className="py-5 hover:bg-[--secondary-button] transition-all duration-300">
                         <details className="group">
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                 <span> How Can I download Instalment Voucher</span>
@@ -162,7 +162,7 @@ const FAQs = () => {
                             </p>
                         </details>
                     </div>
-                    <div className="py-5">
+                    <div className="py-5 hover:bg-[--secondary-button] transition-all duration-300">
                         <details className="group">
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                 <span>How Can I Get my Surcharge Waived Off?</span>

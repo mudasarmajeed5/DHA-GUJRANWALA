@@ -284,7 +284,7 @@ const Navbar = () => {
           <div>
             <span className="z-10 relative">
               {DropDown ? (
-                  <RxCross2 onClick={() => setDropDown(!DropDown)} className="text-white md relative z-20" />
+                  <RxCross2 onClick={() => setDropDown(!DropDown)} className="text-[--text-color] md relative z-20" />
               ) : (
                 <span className="flex gap-1 text-[16px] text-[--secondary-button] font-extralight items-center">
                   <FaSearch /> |
@@ -332,13 +332,13 @@ const Navbar = () => {
                             <div className="relative z-10 divide-y divide-gray-100">
                               <ul className="py-2 text-sm">
                                 <li>
-                                  <a href="/2-marla-commercial" className="block py-2 px-2 hover:underline underline-offset-4">2 Marla Commercial</a>
+                                  <a href="/2-marla-commercial" className="block py-2 px-2 hover:text-[--secondary-button]">2 Marla Commercial</a>
                                 </li>
                                 <li>
-                                  <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">4 Marla Commercial</a>
+                                  <a href="#" className="block py-2 px-2 hover:text-[--secondary-button]">4 Marla Commercial</a>
                                 </li>
                                 <li>
-                                  <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">6 Marla Commercial</a>
+                                  <a href="#" className="block py-2 px-2 hover:text-[--secondary-button]">6 Marla Commercial</a>
                                 </li>
                               </ul>
                             </div>
@@ -368,22 +368,22 @@ const Navbar = () => {
                     <div className="z-10 text-left divide-y divide-gray-100 rounded-lg w-44 mt-2">
                       <ul className="py-2 text-sm">
                         <li>
-                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Procedure</a>
+                          <a href="#" className="block py-2 px-2 hover:text-[--secondary-button]">Procedure</a>
                         </li>
                         <li>
-                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Payment voucher</a>
+                          <a href="#" className="block py-2 px-2 hover:text-[--secondary-button]">Payment voucher</a>
                         </li>
                         <li>
-                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Important notices</a>
+                          <a href="#" className="block py-2 px-2 hover:text-[--secondary-button]">Important notices</a>
                         </li>
                         <li>
-                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Building control</a>
+                          <a href="#" className="block py-2 px-2 hover:text-[--secondary-button]">Building control</a>
                         </li>
                         <li>
-                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Froms</a>
+                          <a href="#" className="block py-2 px-2 hover:text-[--secondary-button]">Froms</a>
                         </li>
                         <li>
-                          <a href="#" className="block py-2 px-2 hover:underline underline-offset-4">Registered Dealers</a>
+                          <a href="#" className="block py-2 px-2 hover:text-[--secondary-button]">Registered Dealers</a>
                         </li>
                       </ul>
                     </div>
@@ -403,13 +403,13 @@ const Navbar = () => {
                     <div className="z-10 text-left divide-y divide-gray-100 rounded-lg w-44 mt-2">
                       <ul className="py-2 text-sm">
                         <li>
-                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Our Story</a>
+                          <a href="#" className="block px-2 hover:text-[--secondary-button] py-2">Our Story</a>
                         </li>
                         <li>
-                          <a href="/aboutus" className="block px-2 hover:underline underline-offset-4 py-2">Leaders</a>
+                          <a href="/aboutus" className="block px-2 hover:text-[--secondary-button] py-2">Leaders</a>
                         </li>
                         <li>
-                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Careers</a>
+                          <a href="#" className="block px-2 hover:text-[--secondary-button] py-2">Careers</a>
                         </li>
                       </ul>
                     </div>
@@ -428,13 +428,13 @@ const Navbar = () => {
                     <div className="z-10 text-left divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
                       <ul className="py-2 text-sm">
                         <li>
-                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Images</a>
+                          <a href="#" className="block px-2 hover:text-[--secondary-button] py-2">Images</a>
                         </li>
                         <li>
-                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">Videos</a>
+                          <a href="#" className="block px-2 hover:text-[--secondary-button] py-2">Videos</a>
                         </li>
                         <li>
-                          <a href="#" className="block px-2 hover:underline underline-offset-4 py-2">3D Tour/Map</a>
+                          <a href="#" className="block px-2 hover:text-[--secondary-button] py-2">3D Tour/Map</a>
                         </li>
                       </ul>
                     </div>
