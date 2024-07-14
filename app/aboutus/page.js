@@ -34,7 +34,7 @@ const About = () => {
                 <img className='md:w-[400px] w-[300px] lg:ml-[150px]' src="/PngItem_42885.png" alt="" />
                 <div className='flex md:w-1/3 w-9/12 flex-col justify-start'>
                     <span className="text-[--text-color] text-2xl text-left">
-                        Welcome to DHA Gujranwala, where modern living meets historical significance in the heart of the Golden Triangle. Strategically located and connected via economic artery of Pakistan, we're committed to reshaping welfare regime & regional living through sustainable development and urban planning. Offering both residential and business opportunities, our meticulously designed community emphasizes smart living and sustainability. Join us in celebrating excellence and embracing a brighter, sustainable future with DHA Gujranwala.
+                        Welcome to DHA Gujranwala, where modern living meets historical significance in the heart of the Golden Triangle. Strategically located and connected via economic artery of Pakistan, were committed to reshaping welfare regime & regional living through sustainable development and urban planning. Offering both residential and business opportunities, our meticulously designed community emphasizes smart living and sustainability. Join us in celebrating excellence and embracing a brighter, sustainable future with DHA Gujranwala.
                     </span>
                 </div>
             </div>
