@@ -4,9 +4,6 @@ import Contactform from "@/components/Contactform";
 import Carousel from "@/components/Carousel";
 import DownloadApp from "@/components/DownloadApp";
 import MultiImageSlider from "@/components/MultiImageSlider";
-import Link from "next/link";
-import { IoLogoInstagram, IoLogoLinkedin,  IoLogoTwitter, IoLogoWhatsapp } from "react-icons/io";
-import { FaXTwitter } from "react-icons/fa6";
 import InterestCaculator from "@/components/AdditionalComponents/InterestCaculator";
 import FAQs from "@/components/AdditionalComponents/FAQs";
 import UpcomingEvents from "@/components/AdditionalComponents/UpcomingEvents";
@@ -14,7 +11,6 @@ import CreateAccount from "@/components/AdditionalComponents/CreateAccount";
 // import WhyChooseUs from "@/components/AdditionalComponents/WhyChooseUs";
 import { CgDarkMode } from "react-icons/cg";
 import { MdLightMode } from "react-icons/md";
-import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -65,30 +61,7 @@ export default function Home() {
     <>
     <marquee behavior="" direction="horizontal" className='text-white bg-[--secondary-button]'>DHA Gujranwala has introduced 2 marla commercial plots for sale in developed sectors. For more information, please contact the sales office. Thank you.</marquee>
     
-    <div className="socials1">
-            <button className="bg-green-600 p-1 hover:right-0 rounded-md flex gap-2">
-              <span className="text-2xl hover:text-white"><FaWhatsapp /></span>
-              <Link href={'wa.link/089nfd'}><span className="show-text">WhatsApp</span></Link>
-            </button>
-            <button className="bg-[#0866ff] p-1 hover:right-0 rounded-md flex gap-2">
-              <span className="text-2xl hover:text-white"><FaFacebook /></span>
-              <Link href={'#'}><span className="show-text">Facebook</span></Link>
-            </button>
-            <button className="bg-pink-600 p-1 hover:right-0 rounded-md flex gap-2">
-              <span className="text-2xl hover:text-white"><IoLogoInstagram /></span>
-              <Link href={'#'}><span className="show-text">Instagram</span></Link>
-            </button>
-            <button className="bg-[#0073b1] p-1 hover:right-0 rounded-md flex gap-2">
-              <span className="text-2xl hover:text-white"><IoLogoLinkedin /></span>
-              <Link href={'#'}><span className="show-text">LinkedIn</span></Link>
-            </button>
-            <button className="bg-black text-white p-1 hover:right-0 rounded-md flex gap-2">
-              <span className="text-2xl"><FaXTwitter/></span>
-              <Link href={'#'}><span className="show-text">Twitter/X</span></Link>
-            </button>
-          </div>
     <Carousel />
-    <button className="fixed rounded-md hover:text-green-800 md:hidden transition-all duration-300 p-1 right-2 bottom-3 text-5xl text-green-500 z-20"><IoLogoWhatsapp /></button>
     <main className="min-h-screen relative">
       <div className="hidden rounded-full mt-[-13vh] md:flex max-w-fit flex-row gap-4 py-2 bg-white mx-auto w-60vw justify-start px-8 items-center">
         <label htmlFor="propertyType" className="text-black">Property Type</label>
@@ -195,7 +168,7 @@ export default function Home() {
 
       </div>
     )}
-    <span className="fixed md:bottom-4 bottom-20 text-red-950 text-2xl bg-[--secondary-button] z-20 border-2 rounded-full right-3"><button
+    <span className="fixed md:bottom-4 bottom-4 text-red-950 text-2xl bg-[--secondary-button] z-20 border-2 rounded-full right-3"><button
       onClick={toggleDarkMode}
       className="p-2"
     >

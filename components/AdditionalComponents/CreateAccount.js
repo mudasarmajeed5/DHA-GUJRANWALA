@@ -23,7 +23,7 @@ const CreateAccount = () => {
                             <input type="text" id="nic" name="nic" className="border bg-[--bg-color] text-[--text-color] px-3 py-2 rounded-lg focus:border-[--secondary-button] text-sm" required />
                         </div>
 
-                        <button type="submit" className="bg-[--secondary-button] text-white py-2 px-4 rounded-full 2xl:text-2xl text-md">Signup</button>
+                        <div className="text-center md:text-left"><button type="submit" className="bg-[--secondary-button] text-white py-2 px-4 rounded-full 2xl:text-2xl text-md">Signup</button></div>
                     </form>
                 </div>
 
@@ -36,7 +36,7 @@ const CreateAccount = () => {
                             <input type="text" id="applicationNumber" name="applicationNumber" className="border bg-[--bg-color] text-[--text-color] px-3 py-2 rounded-lg focus:border-[--secondary-button] text-sm" required />
                         </div>
 
-                        <button type="submit" className="bg-[--secondary-button] text-white py-2 px-4 rounded-full 2xl:text-2xl text-md">Track Status</button>
+                        <div className="text-center md:text-left"><button type="submit" className="bg-[--secondary-button] text-white py-2 px-4 rounded-full 2xl:text-2xl text-md">Track Status</button></div>
                     </form>
 
                     {/* Placeholder for application status result */}

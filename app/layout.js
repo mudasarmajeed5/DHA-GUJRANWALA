@@ -4,8 +4,11 @@ import Navbar from "@/components/Navbar";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Footer from "@/components/Footer";
+import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
-import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5';
+import { FaFacebook,FaWhatsapp } from "react-icons/fa";
+import { IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5';
 import Script from "next/script";
 export const metadata = {
   title: "DHA GUJRANWALA",
@@ -17,6 +20,28 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <div className="socials1">
+            <button className="bg-green-600 p-1 hover:right-0 rounded-md flex gap-2">
+              <span className="text-2xl hover:text-white"><FaWhatsapp /></span>
+              <a href="https://wa.me/92123456789" className="show-text">WhatsApp</a>
+            </button>
+            <button className="bg-[#0866ff] p-1 hover:right-0 rounded-md flex gap-2">
+              <span className="text-2xl hover:text-white"><FaFacebook /></span>
+              <Link href={'#'}><span className="show-text">Facebook</span></Link>
+            </button>
+            <button className="bg-pink-600 p-1 hover:right-0 rounded-md flex gap-2">
+              <span className="text-2xl hover:text-white"><IoLogoInstagram /></span>
+              <Link href={'#'}><span className="show-text">Instagram</span></Link>
+            </button>
+            <button className="bg-[#0073b1] p-1 hover:right-0 rounded-md flex gap-2">
+              <span className="text-2xl hover:text-white"><IoLogoLinkedin /></span>
+              <Link href={'#'}><span className="show-text">LinkedIn</span></Link>
+            </button>
+            <button className="bg-black text-white p-1 hover:right-0 rounded-md flex gap-2">
+              <span className="text-2xl"><FaXTwitter/></span>
+              <Link href={'#'}><span className="show-text">Twitter/X</span></Link>
+            </button>
+          </div>
           {children}
           <Footer />
           <Script

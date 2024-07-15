@@ -65,7 +65,7 @@ const TwoMarlaCommercial = () => {
                             <img src="/2marlacontact.png" className='md:w-2/5 w-3/5 md:ml-[-40%]  relative z-10' alt="" />
                         </div>
                         <div className="md:w-1/2 w-full flex flex-col md:ml-auto md:py-8 mt-8 md:mt-0">
-                            <h2 className="text-5xl text-[--text-button] mb-1 uppercase font-bold title-font">
+                            <h2 className="text-5xl text-center text-[--text-button] mb-1 uppercase font-bold title-font">
                                 Get in Touch
                             </h2>
                             <div className="relative mb-4">
@@ -141,7 +141,7 @@ const TwoMarlaCommercial = () => {
                 </div>
             </div >
 
-            <span className="fixed md:bottom-4 bottom-20 text-red-950 text-2xl bg-[--secondary-button] rounded-full right-3"><button
+            <span className="fixed md:bottom-4 bottom-14 z-10 text-red-950 text-2xl bg-[--secondary-button] rounded-full right-3"><button
                 onClick={toggleDarkMode}
                 className="p-2"
             >
