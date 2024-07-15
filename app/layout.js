@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5';
 import Script from "next/script";
 export const metadata = {
   title: "DHA GUJRANWALA",
@@ -16,16 +17,16 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        {children}
-        <Footer />
-        <Script
-          src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
-          strategy="lazyOnload"
-        />
-        <Script
-          src="https://cdn.lordicon.com/lordicon.js"
-          strategy="lazyOnload"
-        />
+          {children}
+          <Footer />
+          <Script
+            src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+            strategy="lazyOnload"
+          />
+          <Script
+            src="https://cdn.lordicon.com/lordicon.js"
+            strategy="lazyOnload"
+          />
       </body>
     </html>
   );

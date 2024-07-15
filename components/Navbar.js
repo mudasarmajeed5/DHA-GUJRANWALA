@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaArrowRight, FaPhone, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-import { FaMapLocationDot, FaWhatsapp } from "react-icons/fa6";
+import { FaEarthAsia, FaMapLocationDot } from "react-icons/fa6";
 import { SlGrid } from "react-icons/sl";
 import { IoCallSharp } from "react-icons/io5";
 import { useRouter } from "next/navigation";
@@ -56,7 +56,7 @@ const Navbar = () => {
 
 
 
-      <div className="md:flex place-self-center gap-0 hidden" >
+      <div className="md:flex ml-[-5%] place-self-center gap-0 hidden" >
         {/* Projects Dropdown */}
         <div className="px-2 py-1 rounded-lg relative">
           <button
@@ -272,10 +272,10 @@ const Navbar = () => {
 
       </div>
 
-      <div className="contact place-self-center md:flex hidden gap-1">
-        <button className="rounded-full px-2 border border-[--secondary-button] hover:bg-[--secondary-button] hover:text-white transition-all duration-300 flex gap-1 justify-center items-center"><span><IoCallSharp /></span><span>Sales Office</span></button>
-        <button className="rounded-full px-2 flex gap-1 justify-center items-center hover:bg-[--secondary-button] hover:text-white transition-all duration-300 py-1 border border-[--secondary-button]"><span><FaWhatsapp /></span><span>Whatsapp</span></button>
-        <button className="rounded-full px-2 flex gap-1 justify-center items-center text-[--text-color] transition-all duration-300 py-1 hover:text-white border border-[--secondary-button] hover:bg-[--secondary-button]">Become JV Partner</button>
+      <div className="contact ml-[-5%] place-self-center md:flex hidden gap-1">
+        <button className="rounded-full px-1 border-2 border-[--secondary-button] hover:bg-[--secondary-button] hover:text-white transition-all duration-300 flex gap-1 justify-center items-center"><span><IoCallSharp /></span><span>Sales Office</span></button>
+        <button className="rounded-full px-2 flex justify-center items-center hover:bg-[--secondary-button] hover:text-white transition-all duration-300 py-1 border-2 border-[--secondary-button] overseasportal"><span className="rotate-90"><FaEarthAsia /></span><span>verseas Portal</span></button>
+        <button className="rounded-full px-2 flex justify-center items-center text-[--text-color] transition-all duration-300 py-1 hover:text-white border-2 border-[--secondary-button] hover:bg-[--secondary-button]">Become JV Partner</button>
       </div>
 
 

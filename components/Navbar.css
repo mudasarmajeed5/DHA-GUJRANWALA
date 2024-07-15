@@ -43,7 +43,17 @@
     flex-direction: column;
     animation: .3s cubic-bezier(0.165, 0.84, 0.44, 1) increaseHeight forwards;
 }
-
+.overseasportal{
+    animation: overseas 2s ease infinite;
+}
+@keyframes overseas{
+    100%,0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: var(--secondary-button);
+    }
+}
 /* Navbar buttons for PC */
 .vertical-buttons {
     position: fixed;
