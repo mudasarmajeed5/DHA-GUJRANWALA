@@ -63,7 +63,7 @@ const Carousel = () => {
                 />
                 <div className="shadow-overlay"></div> {/* Add shadow overlay */}
                 <div className={`${slide == index ? "slide Carouseltext" : "slide slide-hidden"} `}>
-                    <div className="text-[--carouseltext] font-mono font-bold">
+                    <div className="text-[--carouseltext] font-mono font-bold text-2xl md:text-5xl text-center">
                         {image.text}
                     </div>
                 </div>

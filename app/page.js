@@ -61,7 +61,7 @@ export default function Home() {
   return (<>
     <marquee behavior="" direction="horizontal" className='text-white bg-[--secondary-button]'>DHA Gujranwala has introduced 2 marla commercial plots for sale in developed sectors. For more information, please contact the sales office. Thank you.</marquee>
     <Carousel />
-    <button className="fixed rounded-md hover:text-green-800 md:hidden transition-all duration-300 p-1 right-2 bottom-3 text-4xl text-green-500 z-20"><IoLogoWhatsapp /></button>
+    <button className="fixed rounded-md hover:text-green-800 md:hidden transition-all duration-300 p-1 right-2 bottom-3 text-5xl text-green-500 z-20"><IoLogoWhatsapp /></button>
     <main className="min-h-screen relative">
       <div className="hidden rounded-full mt-[-13vh] md:flex max-w-fit flex-row gap-4 py-2 bg-white mx-auto w-60vw justify-start px-8 items-center">
         <label htmlFor="propertyType" className="text-black">Property Type</label>
@@ -131,11 +131,11 @@ export default function Home() {
     {/* Search categories of homes */}
     {showMobileDiv && (
       <div className='z-10 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-4 md:hidden bg-[--secondary-button]'>
-        <button onClick={toggleSearchDiv} className='rounded-full text-[--text-color] border border-black px-2 py-1'>
+        <button onClick={toggleSearchDiv} className='rounded-full border-2 text-[--text-color] border-black px-2 py-1'>
           {showSearchDiv ? 'Close menu' : 'Explore categories'}
         </button>
 
-        <button className='text-[--text-color] rounded-full border border-black px-4 py-2'>
+        <button className='text-[--text-color] rounded-full border-2 border-black px-4 py-2'>
           Show More
         </button>
       </div>
@@ -168,7 +168,7 @@ export default function Home() {
 
       </div>
     )}
-    <span className="fixed md:bottom-4 bottom-16 text-red-950 text-2xl bg-[--secondary-button] z-20 border-2 rounded-full right-3"><button
+    <span className="fixed md:bottom-4 bottom-20 text-red-950 text-2xl bg-[--secondary-button] z-20 border-2 rounded-full right-3"><button
       onClick={toggleDarkMode}
       className="p-2"
     >

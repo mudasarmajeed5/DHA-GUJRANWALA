@@ -3,7 +3,7 @@ const Footer = () => {
     <>
       <footer className="bg-[--secondary-button]  mt-10 lg:grid lg:grid-cols-5">
         <div className="relative block h-52 lg:col-span-2 lg:h-full overflow-hidden">
-          <div className="shadow-overlay1 z-20 relative"></div>
+          <div className="shadow-overlay1 z-[3] relative"></div>
           <img
             src="https://www.dreamhomes.com.pk/img/blog/dha-gujranwala-993x515.jpg"
             alt=""
@@ -22,12 +22,11 @@ const Footer = () => {
                   href="#"
                   className="block text-2xl font-medium text-white hover:opacity-75 sm:text-3xl"
                 >
-                  0324 1116262
+                  +92 (055) 111-666-000
                 </a>
               </p>
               <ul className="mt-8 space-y-1 text-sm text-white">
                 <li>Monday to Friday: 10am - 5pm</li>
-                <li>Weekend: 10am - 3pm</li>
                 <li><a href="mailto:accts04@dhagwa.com"><span className="hover:border-white flex gap-1 items-center max-w-fit bg-[--secondary-button] font-bold text-3xl py-1 rounded-md text-white"><lord-icon
                   src="https://cdn.lordicon.com/nzixoeyk.json"
                   trigger="loop"

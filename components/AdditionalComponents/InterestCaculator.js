@@ -4,17 +4,17 @@ const InterestCaculator = () => {
     return (
         <>
          <div className='my-14 border'></div>
-        <div className="text-center w-4/5 mx-auto font-bold text-5xl py-10 text-[--secondary-button] uppercase">Make your calculations with ease</div>
+        <div className="text-center w-4/5 mx-auto font-bold 2xl:text-5xl text-3xl 2xl:py-10 py-4 text-[--secondary-button] uppercase">Make your calculations with ease</div>
             <div className="flex flex-col justify-between lg:flex-row items-center">
-                <div className="bg-[--bg-color] w-1/2 p-6 rounded-lg lg:mr-6 lg:mb-0 mb-6">
-                    <h2 className="text-4xl font-bold text-[--secondary-button] mb-4">Property Calculator</h2>
+                <div className="bg-[--bg-color] w-full md:w-1/2 p-6 rounded-lg lg:mr-6 lg:mb-0 mb-6">
+                    <h2 className="2xl:text-4xl text-3xl text-center md:text-left font-bold text-[--secondary-button] mb-4">Property Calculator</h2>
                     <div className="grid grid-cols-2 w-full gap-4 mb-4 text-[--text-color]">
                         <div>
                             <label
                                 htmlFor="property-type"
-                                className="block text-xl font-bold"
+                                className="block 2xl:text-xl text-md 2xl:font-bold"
                             >
-                                Property Type*
+                                Property Type
                             </label>
                             <select
                                 id="property-type"
@@ -27,7 +27,7 @@ const InterestCaculator = () => {
                             </select>
                         </div>
                         <div>
-                            <label htmlFor="property-value" className="block text-xl font-bold ">
+                            <label htmlFor="property-value" className="block 2xl:text-xl text-md 2xl:font-bold ">
                                 Property Price
                             </label>
                             <input
@@ -39,9 +39,9 @@ const InterestCaculator = () => {
                         <div>
                             <label
                                 htmlFor="down-payment"
-                                className="block text-xl font-bold "
+                                className="block 2xl:text-xl text-md 2xl:font-bold "
                             >
-                                Down Payment*
+                                Down Payment
                             </label>
                             <input
                                 type="text"
@@ -53,7 +53,7 @@ const InterestCaculator = () => {
                         <div>
                             <label
                                 htmlFor="down-charges"
-                                className="block text-xl font-bold "
+                                className="block 2xl:text-xl text-md 2xl:font-bold "
                             >
                                 Poccession Charges
                             </label>
@@ -67,7 +67,7 @@ const InterestCaculator = () => {
                         <div>
                             <label
                                 htmlFor="down-charges"
-                                className="block text-xl font-bold "
+                                className="block 2xl:text-xl text-md 2xl:font-bold "
                             >
                                 DC Charges
                             </label>
@@ -81,7 +81,7 @@ const InterestCaculator = () => {
                         <div>
                             <label
                                 htmlFor="down-payment"
-                                className="block text-xl font-bold "
+                                className="block 2xl:text-xl text-md 2xl:font-bold "
                             >
                                 Transfer Charges
                             </label>
@@ -97,7 +97,7 @@ const InterestCaculator = () => {
                         <div>
                             <label
                                 htmlFor="interest-rate"
-                                className="block text-xl font-bold "
+                                className="block 2xl:text-xl text-md 2xl:font-bold "
                             >
                                 Interest Rate*
                             </label>
@@ -114,7 +114,7 @@ const InterestCaculator = () => {
                         <div>
                             <label
                                 htmlFor="loan-time"
-                                className="block text-xl font-bold "
+                                className="block 2xl:text-xl text-md 2xl:font-bold "
                             >
                                 Loan Time*
                             </label>
@@ -133,12 +133,12 @@ const InterestCaculator = () => {
                         <span className="text-lg ">4.25%</span>
                         <span className="text-lg ">12 years</span>
                     </div>
-                    <button className="bg-[--download-app-green] text-[var(--text-color)] p-2 rounded-full text-4xl w-full">
+                    <button className="bg-[--download-app-green] text-[var(--text-color)] p-2 rounded-full text-2xl 2xl:text-4xl w-full">
                         Next
                     </button>
                 </div>
-                <div className="p-6 px-12 rounded-lg shadow-md min-w-fit mx-auto">
-                    <h3 className="text-5xl font-bold text-[--secondary-button] mb-4">
+                <div className="p-6 px-12 rounded-lg shadow-md text-center min-w-fit mx-auto">
+                    <h3 className="2xl:text-5xl text-3xl font-bold text-[--secondary-button] mb-4">
                         Monthly Payment
                     </h3>
                     <p className="text-3xl font-bold text-[--secondary-button] mb-2">Rs. 1,8000</p>

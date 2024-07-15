@@ -47,11 +47,11 @@ const Navbar = () => {
 
   const router = useRouter()
   return (
-    <div className='text-center bg-[--bg-color] sticky top-0 py-0 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
+    <div className='text-center bg-[--bg-color] sticky top-0 py-1 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
 
 
       <div onClick={() => router.push('/')} className="md:text-3xl text-2xl cursor-pointer underline-offset-4 navbar-name">
-        <img src="https://i.ibb.co/RQ2Lj7c/dhalogo.png" width={150} alt="" />
+        <img src="/dhalogo.png" width={150} alt="" />
       </div>
 
 
@@ -208,13 +208,13 @@ const Navbar = () => {
             >
               <ul className="py-2 text-sm text-black">
                 <li>
-                  <a href="#" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
+                  <a href="/aboutus" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Our Story</span>
                     <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="/aboutus" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
+                  <a href="/leaders" className="relative px-4 py-2 flex justify-between items-center transition-all duration-300 ease-in-out group">
                     <span>Leaders</span>
                     <span className="absolute z-[-100] left-0 top-0 bottom-0 bg-[--secondary-button] transition-all duration-300 ease-in-out w-0 group-hover:w-full"></span>
                   </a>
@@ -284,9 +284,9 @@ const Navbar = () => {
           <div>
             <span className="z-10 relative">
               {DropDown ? (
-                  <RxCross2 onClick={() => setDropDown(!DropDown)} className="text-[--text-color] md relative z-20" />
+                  <RxCross2 onClick={() => setDropDown(!DropDown)} className="text-[--text-color] relative z-20" />
               ) : (
-                <span className="flex gap-1 text-[16px] text-[--secondary-button] font-extralight items-center">
+                <span className="flex gap-1 text-[20px] text-[--secondary-button] font-extralight items-center">
                   <FaSearch /> |
                   <FaMapLocationDot /> |
                   <FaPhone />| 
@@ -403,10 +403,10 @@ const Navbar = () => {
                     <div className="z-10 text-left divide-y divide-gray-100 rounded-lg w-44 mt-2">
                       <ul className="py-2 text-sm">
                         <li>
-                          <a href="#" className="block px-2 hover:text-[--secondary-button] py-2">Our Story</a>
+                          <a href="/aboutus" className="block px-2 hover:text-[--secondary-button] py-2">Our Story</a>
                         </li>
                         <li>
-                          <a href="/aboutus" className="block px-2 hover:text-[--secondary-button] py-2">Leaders</a>
+                          <a href="/leaders" className="block px-2 hover:text-[--secondary-button] py-2">Leaders</a>
                         </li>
                         <li>
                           <a href="#" className="block px-2 hover:text-[--secondary-button] py-2">Careers</a>

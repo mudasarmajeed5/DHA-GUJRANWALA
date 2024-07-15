@@ -4,7 +4,7 @@ const Contactform = () => {
   return (
     <section className='flex md:flex-row flex-col items-center justify-around py-16'>
       <div className='text-4xl md:my-auto mb-5 text-[--secondary-button] underline underline-offset-4'>
-        <img src="https://www.pngplay.com/wp-content/uploads/1/Contact-Us-PNG-Royalty-Free-High-Quality.png" width={500} alt="" />
+        <img src="https://www.pngplay.com/wp-content/uploads/1/Contact-Us-PNG-Royalty-Free-High-Quality.png" className='lg:w-[400px] w-[250px]' alt="" />
         </div>
       <div>
         <form className="max-w-md mx-auto">

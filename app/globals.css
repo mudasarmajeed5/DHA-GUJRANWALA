@@ -85,7 +85,7 @@ body {
   appearance: none;
   width: 20px;
   height: 20px;
-  background: var(--footer-orange);
+  background: white;
   cursor: pointer;
   border-radius: 50%;
 }
