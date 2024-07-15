@@ -21,19 +21,19 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         <div className="socials1">
-            <button className="bg-green-600 p-1 hover:right-0 rounded-md flex gap-2">
+            <button className="bg-green-600 p-1 hover:right-0 rounded-md flex gap-2 text-white">
               <span className="text-2xl hover:text-white"><FaWhatsapp /></span>
               <a href="https://wa.me/92123456789" className="show-text">WhatsApp</a>
             </button>
-            <button className="bg-[#0866ff] p-1 hover:right-0 rounded-md flex gap-2">
+            <button className="bg-[#0866ff] p-1 hover:right-0 rounded-md flex gap-2 text-white">
               <span className="text-2xl hover:text-white"><FaFacebook /></span>
               <Link href={'#'}><span className="show-text">Facebook</span></Link>
             </button>
-            <button className="bg-pink-600 p-1 hover:right-0 rounded-md flex gap-2">
+            <button className="bg-pink-600 p-1 hover:right-0 rounded-md flex gap-2 text-white">
               <span className="text-2xl hover:text-white"><IoLogoInstagram /></span>
               <Link href={'#'}><span className="show-text">Instagram</span></Link>
             </button>
-            <button className="bg-[#0073b1] p-1 hover:right-0 rounded-md flex gap-2">
+            <button className="bg-[#0073b1] p-1 hover:right-0 rounded-md flex gap-2 text-white">
               <span className="text-2xl hover:text-white"><IoLogoLinkedin /></span>
               <Link href={'#'}><span className="show-text">LinkedIn</span></Link>
             </button>
