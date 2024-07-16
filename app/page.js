@@ -9,6 +9,8 @@ import FAQs from "@/components/AdditionalComponents/FAQs";
 import UpcomingEvents from "@/components/AdditionalComponents/UpcomingEvents";
 import CreateAccount from "@/components/AdditionalComponents/CreateAccount";
 // import WhyChooseUs from "@/components/AdditionalComponents/WhyChooseUs";
+import { FaEarthAsia } from "react-icons/fa6";
+import { IoCallSharp } from "react-icons/io5";
 import { CgDarkMode } from "react-icons/cg";
 import { MdLightMode } from "react-icons/md";
 export default function Home() {
@@ -147,7 +149,6 @@ export default function Home() {
     {showSearchDiv && (
       <div
         className='fixed top-0 left-0 flex justify-center items-center flex-col w-screen h-screen bg-gray-800 gap-4 text-white z-10 transition-all duration-500'
-        // onClick={() => { toggleSearchDiv(); }}
       >
         <label htmlFor="propertyType">Property Type</label>
         <select id="propertyType" name="propertyType" className="border bg-black border-gray-300 p-2">
@@ -176,26 +177,11 @@ export default function Home() {
         className='fixed top-0 left-0 flex justify-center items-center flex-col w-screen h-screen bg-gray-800 gap-4 text-white z-10 transition-all duration-500'
         // onClick={() => { toggleSearchDiv(); }}
       >
-        <label htmlFor="propertyType">Property Type</label>
-        <select id="propertyType" name="propertyType" className="border bg-black border-gray-300 p-2">
-          <option value="residential">Residential</option>
-          <option value="commercial">Commercial</option>
-        </select>
-        <label htmlFor="propertySize">Property Size</label>
-        <select id="propertySize" name="propertySize" className="border bg-black border-gray-300 p-2">
-          <option value="5marla">5 Marla</option>
-          <option value="10marla">10 Marla</option>
-          <option value="15marla">15 Marla</option>
-          <option value="1kanal">1 Kanal</option>
-        </select>
-        <label htmlFor="pricerange" className="text-white">Price Range</label>
-        <select id="propertySize" name="propertySize" className="border rounded-md py-1 hover:bg-[--secondary-button] bg-black p-2 ">
-          <option value="5marla">30M</option>
-          <option value="10marla">50M</option>
-          <option value="15marla">70M</option>
-          <option value="1kanal">100M</option>
-        </select>
-        <button className="bg-blue-500 hover:bg-white text-white hover:text-black font-bold py-2 px-4 rounded">Search</button>
+       <div className="contact ml-[-5%] flex flex-col gap-5">
+        <button className="rounded-full text-lg px-4 py-2 border-2 border-[--secondary-button] hover:bg-[--secondary-button] hover:text-white transition-all duration-300 flex gap-1 justify-center items-center"><span><IoCallSharp /></span><span>Sales Office</span></button>
+        <button className="rounded-full text-lg px-4 flex justify-center items-center hover:bg-[--secondary-button] hover:text-white transition-all duration-300 py-2 border-2 border-[--secondary-button] overseasportal"><span className="rotate-90"><FaEarthAsia /></span><span>verseas Portal</span></button>
+        <button className="rounded-full text-lg px-4 flex justify-center items-center text-[--text-color] transition-all duration-300 py-2 hover:text-white border-2 border-[--secondary-button] hover:bg-[--secondary-button]">Become JV Partner</button>
+      </div>
 
       </div>
     )}
