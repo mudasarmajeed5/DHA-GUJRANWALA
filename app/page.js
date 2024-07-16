@@ -102,7 +102,7 @@ export default function Home() {
       <div className="py-2 md:mt-[20vh] text-[--secondary-button]">
         <div className="w-1/2 my-2 mx-auto md:text-left text-center md:mx-16">
           <p className="text-3xl my-5 md:text-left text-center underline font-bold">COMMUNITIES</p>
-          <h1 className="md:text-4xl md:text-left text-center font-bold text-2xl">
+          <h1 className="md:text-2xl md:text-left text-center font-bold text-xl">
             FEATURED COMMUNITIES</h1></div>
         <MultiImageSlider />
       </div>
