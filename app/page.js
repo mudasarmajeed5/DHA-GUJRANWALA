@@ -17,6 +17,7 @@ export default function Home() {
   const [showButton, setShowButton] = useState(false);
   const [showMobileDiv, setShowMobileDiv] = useState(false);
   const [showSearchDiv, setShowSearchDiv] = useState(false);
+  const [showmore, setShowmore] = useState(false);
   const toggleDarkMode = () => {
     if (darkMode) {
       document.documentElement.classList.remove('dark');
@@ -50,6 +51,9 @@ export default function Home() {
   }, []);
   const toggleSearchDiv = () => {
     setShowSearchDiv(!showSearchDiv);
+  };
+  const toggleshowmore = () => {
+    setShowmore(!showmore)
   };
   const scrollToTop = () => {
     window.scrollTo({
@@ -130,20 +134,47 @@ export default function Home() {
     }
     {/* Search categories of homes */}
     {showMobileDiv && (
-      <div className='z-10 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-4 md:hidden bg-[--secondary-button]'>
+      <div className='z-20 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-4 md:hidden bg-[--secondary-button]'>
         <button onClick={toggleSearchDiv} className='rounded-full border-2 text-[--text-color] border-black px-2 py-1'>
           {showSearchDiv ? 'Close menu' : 'Explore categories'}
         </button>
 
-        <button className='text-[--text-color] rounded-full border-2 border-black px-4 py-2'>
-          Show More
+        <button onClick={toggleshowmore} className='text-[--text-color] rounded-full border-2 border-black px-4 py-2'>
+        {showmore ? 'Show Less' : 'Show More'}
         </button>
       </div>
     )}
     {showSearchDiv && (
       <div
-        className='fixed top-0 left-0 flex justify-center items-center flex-col w-screen h-screen bg-gray-800 gap-4 text-white z-[5] transition-all duration-500'
-        onClick={() => { toggleSearchDiv(); }}
+        className='fixed top-0 left-0 flex justify-center items-center flex-col w-screen h-screen bg-gray-800 gap-4 text-white z-10 transition-all duration-500'
+        // onClick={() => { toggleSearchDiv(); }}
+      >
+        <label htmlFor="propertyType">Property Type</label>
+        <select id="propertyType" name="propertyType" className="border bg-black border-gray-300 p-2">
+          <option value="residential">Residential</option>
+          <option value="commercial">Commercial</option>
+        </select>
+        <label htmlFor="propertySize">Property Size</label>
+        <select id="propertySize" name="propertySize" className="border bg-black border-gray-300 p-2">
+          <option value="5marla">5 Marla</option>
+          <option value="10marla">10 Marla</option>
+          <option value="15marla">15 Marla</option>
+          <option value="1kanal">1 Kanal</option>
+        </select>
+        <label htmlFor="pricerange" className="text-white">Price Range</label>
+        <select id="propertySize" name="propertySize" className="border rounded-md py-1 hover:bg-[--secondary-button] bg-black p-2 ">
+          <option value="5marla">30M</option>
+          <option value="10marla">50M</option>
+          <option value="15marla">70M</option>
+          <option value="1kanal">100M</option>
+        </select>
+        <button className="bg-blue-500 hover:bg-white text-white hover:text-black font-bold py-2 px-4 rounded">Search</button>
+
+      </div>
+    )}{showmore && (
+      <div
+        className='fixed top-0 left-0 flex justify-center items-center flex-col w-screen h-screen bg-gray-800 gap-4 text-white z-10 transition-all duration-500'
+        // onClick={() => { toggleSearchDiv(); }}
       >
         <label htmlFor="propertyType">Property Type</label>
         <select id="propertyType" name="propertyType" className="border bg-black border-gray-300 p-2">
