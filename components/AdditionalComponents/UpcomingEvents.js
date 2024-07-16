@@ -9,7 +9,7 @@ const UpcomingEvents = () => {
        
 
         <div className="relative w-full md:h-[calc(100%-200px)] h-[60vh] overflow-hidden">
-        <div className="z-20 relative pt-4 md:pt-14">
+        <div className=" z-10 relative pt-4 md:pt-14">
            <h2 className="2x:text-4xl text-3xl text-[--secondary-button] text-center font-semibold mb-4 uppercase">Upcoming Events</h2>
           <div className="flex items-center justify-center flex-wrap gap-4 mb-2 md:mb-6">
             <div className="relative">
