@@ -137,12 +137,12 @@ export default function Home() {
     }
     {/* Search categories of homes */}
     {showMobileDiv && (
-      <div className='z-20 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-4 md:hidden bg-[--secondary-button]'>
+      <div className='z-20 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-2 md:hidden bg-[--secondary-button]'>
         <button onClick={toggleSearchDiv} className='rounded-full border-2 text-[--text-color] border-black px-2 py-1'>
           {showSearchDiv ? 'Close menu' : 'Explore categories'}
         </button>
 
-        <button onClick={toggleshowmore} className='text-[--text-color] rounded-full border-2 border-black px-4 py-2'>
+        <button onClick={toggleshowmore} className='text-[--text-color] rounded-full border-2 border-black px-2 py-1'>
         {showmore ? 'Show Less' : 'Show More'}
         </button>
       </div>
