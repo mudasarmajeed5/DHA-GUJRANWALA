@@ -68,6 +68,7 @@ export default function Home() {
     <marquee behavior="" direction="horizontal" className='text-white bg-[--secondary-button]'>DHA Gujranwala has introduced 2 marla commercial plots for sale in developed sectors. For more information, please contact the sales office. Thank you.</marquee>
     
     <Carousel />
+    <div className="border bg-white"></div>
     <main className="min-h-screen relative">
       <div className="hidden rounded-full mt-[-13vh] md:flex max-w-fit flex-row gap-4 py-2 bg-white mx-auto w-60vw justify-start px-8 items-center">
         <label htmlFor="propertyType" className="text-black">Property Type</label>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Component from './PieChart'
 const InterestCaculator = () => {
     return (
         <>
@@ -133,12 +133,14 @@ const InterestCaculator = () => {
                         <span className="text-lg ">4.25%</span>
                         <span className="text-lg ">12 years</span>
                     </div>
-                    <button className="bg-[--download-app-green] text-[var(--text-color)] p-2 rounded-full text-2xl 2xl:text-4xl w-full">
+                    <button className="bg-[--download-app-green] text-[var(--text-color)] p-2 rounded-full text-2xl 2xl:text-3xl w-full">
                         Next
                     </button>
                 </div>
-                <div className="p-6 px-12 rounded-lg shadow-md text-center min-w-fit mx-auto">
-                    <h3 className="2xl:text-5xl text-3xl font-bold text-[--secondary-button] mb-4">
+                <div className="p-6 px-12 rounded-lg text-center min-w-fit mx-auto">
+                    
+                    <Component/>
+                    {/* <h3 className="2xl:text-5xl text-3xl font-bold text-[--secondary-button] mb-4">
                         Monthly Payment
                     </h3>
                     <p className="text-3xl font-bold text-[--secondary-button] mb-2">Rs. 1,8000</p>
@@ -147,8 +149,8 @@ const InterestCaculator = () => {
                     <p className="text-sm text-[--secondary-button]">Property Taxes</p>
                     <p className="text-lg font-bold text-[--secondary-button] mb-2">Rs. 2200</p>
                     <p className="text-sm text-[--secondary-button]">Homeowners Insurance</p>
-                    <p className="text-lg font-bold text-[--secondary-button]">Rs. 71</p>
-                </div>
+                    <p className="text-lg font-bold text-[--secondary-button]">Rs. 71</p> */}
+                </div> 
             </div>
             
             <div className='my-14 border'></div>

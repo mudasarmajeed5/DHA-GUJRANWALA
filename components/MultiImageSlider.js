@@ -22,7 +22,7 @@ const Card = ({ heading, paragraph, buttonText, imageSrc }) => {
         </p>
         <a
           href="#"
-          className=" bg-[--secondary-button] rounded-full text-[--text-color] hover:opacity-90 transition-all duration-200 px-2 py-1"
+          className=" bg-[--secondary-button] rounded-full text-sm text-white text-[--text-color] hover:opacity-90 transition-all duration-200 px-4 py-2"
         >
           {buttonText}
         </a>

@@ -73,7 +73,7 @@ const DownloadApp = () => {
                 </div>
             </div>
             <div className='w-full md:w-1/2 p-3 flex justify-center items-center'>
-                <img className='w-3/5' src="png/png-download-app.png" alt="" />
+                <img className='w-3/5 ' src="png/png-download-app.png" alt="" />
             </div>
         </div>
     )

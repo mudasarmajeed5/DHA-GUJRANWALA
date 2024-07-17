@@ -33,13 +33,13 @@ export default function RootLayout({ children }) {
               <span className="text-2xl hover:text-white"><IoLogoInstagram /></span>
               <Link href={'#'}><span className="show-text">Instagram</span></Link>
             </button>
-            <button className="bg-[#0073b1] p-1 hover:right-0 rounded-md flex gap-2 text-white">
-              <span className="text-2xl hover:text-white"><IoLogoLinkedin /></span>
-              <Link href={'#'}><span className="show-text">LinkedIn</span></Link>
-            </button>
             <button className="bg-black text-white p-1 hover:right-0 rounded-md flex gap-2">
               <span className="text-2xl"><FaXTwitter/></span>
               <Link href={'#'}><span className="show-text">Twitter/X</span></Link>
+            </button>
+            <button className="bg-[#0073b1] p-1 hover:right-0 rounded-md flex gap-2 text-white">
+              <span className="text-2xl hover:text-white"><IoLogoLinkedin /></span>
+              <Link href={'#'}><span className="show-text">LinkedIn</span></Link>
             </button>
           </div>
           {children}

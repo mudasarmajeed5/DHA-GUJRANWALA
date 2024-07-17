@@ -5,12 +5,12 @@ const UpcomingEvents = () => {
     <>
 
       <div className='mt-6 border'></div>
-      <div className="bg-black text-foreground">
+      <div className="text-foreground">
        
 
-        <div className="relative w-full md:h-[calc(100%-200px)] h-[60vh] overflow-hidden">
-        <div className=" z-10 relative pt-4 md:pt-14">
-           <h2 className="2x:text-4xl text-3xl text-[--secondary-button] text-center font-semibold mb-4 uppercase">Upcoming Events</h2>
+        <div className="relative w-full h-[85vh] overflow-hidden">
+        <div className="top-0 py-10 md:py-20">
+           <h2 className="2x:text-4xl text-2xl text-[--secondary-button] text-center font-semibold mb-4 uppercase">Upcoming Events</h2>
           <div className="flex items-center justify-center flex-wrap gap-4 mb-2 md:mb-6">
             <div className="relative">
               <input
@@ -37,16 +37,18 @@ const UpcomingEvents = () => {
               <span>Location</span>
               <span><FaArrowDown /></span>
             </button>
-          </div></div>
-          <video
+          </div>
+        </div>
+        <div className="absolute top-0 z-[-10] w-full h-full"><video
             autoPlay
             muted
             loop
-            className="md:top-[-200px] top-[-100px] relative w-full h-full sm:h-auto object-cover object-center"
+            className="w-full h-full object-cover object-center"
             src="/EventsVideo.mp4"
-          ></video>
+          ></video></div>
         </div>
-        <div className="grid md:mt-[-100px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div className='md:mb-16 mb-6 border'></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           <div className="bg-card p-4 rounded-lg">
             <div className="relative md:p-0 pt-5">
               <img
