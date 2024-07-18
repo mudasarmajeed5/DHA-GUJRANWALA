@@ -24,13 +24,11 @@
   --secondary-button: #378334;
   --download-app-green: green;
   --carouseltext:white;
-  --footer-orange:orange;
 }
 
 .dark {
   --text-color: #ffffff;
   --bg-color: #000000;
-  --footer-orange:orange;
   --rich-black: #d1c6c6;
   --primary-button: #cccbc2;
   --secondary-button: #e50914;
@@ -97,7 +95,7 @@ body {
 }
 .socials1 {
   position: fixed;
-  bottom: 28%;
+  bottom: 20%;
   right: 0px;
   z-index: 100;
   display: flex;

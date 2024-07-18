@@ -15,7 +15,6 @@ import { CgDarkMode } from "react-icons/cg";
 import { MdLightMode } from "react-icons/md";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-
   const [showButton, setShowButton] = useState(false);
   const [showMobileDiv, setShowMobileDiv] = useState(false);
   const [showSearchDiv, setShowSearchDiv] = useState(false);
@@ -30,9 +29,10 @@ export default function Home() {
     localStorage.setItem('darkMode', JSON.stringify(!darkMode));
     setDarkMode(!darkMode);
   };
+  
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 300) {
         setShowButton(true);
         setShowMobileDiv(true);
       } else {
@@ -53,9 +53,12 @@ export default function Home() {
   }, []);
   const toggleSearchDiv = () => {
     setShowSearchDiv(!showSearchDiv);
+    setShowmore(false); // Close showmore when toggling search div
   };
+  
   const toggleshowmore = () => {
-    setShowmore(!showmore)
+    setShowmore(!showmore);
+    setShowSearchDiv(false); // Close search div when toggling showmore
   };
   const scrollToTop = () => {
     window.scrollTo({
@@ -123,30 +126,27 @@ export default function Home() {
 
 
     {/* Scroll to top button */}
-    {showButton && (
       <div
         onClick={scrollToTop}
-        className='fixed bottom-1 md:bottom-2 left-2 z-50 cursor-pointer'
+        className={`fixed ${showButton?"translate-y-0":"translate-y-14"} transition-all duration-500 bottom-0 md:bottom-2 left-2 z-50 cursor-pointer`}
       >
         <span><lord-icon
           src="https://cdn.lordicon.com/dwoxxgps.json"
           trigger="hover"
-          style={{ width: "45px", height: "45px", }}
+          style={{ width: "45px", height: "45px"}}
         ></lord-icon></span>
-      </div>)
-    }
+      </div>
     {/* Search categories of homes */}
-    {showMobileDiv && (
-      <div className='z-20 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-2 md:hidden bg-[--secondary-button]'>
-        <button onClick={toggleSearchDiv} className='rounded-full border-2 text-[--text-color] border-black px-2 py-1'>
-          {showSearchDiv ? 'Close menu' : 'Explore categories'}
+      <div className={`z-20 fixed bottom-0 text-sm left-0 w-full flex justify-center gap-1 py-2 transition-transform duration-500 ${showMobileDiv ? "translate-y-0":"translate-y-14 "}  md:hidden bg-[--secondary-button]`}>
+        <button onClick={toggleSearchDiv} className='rounded-full border-2 text-[--text-color] border-black px-3 py-2'>
+          {showSearchDiv ? 'Close Categories' : 'Explore Categories'}
         </button>
 
-        <button onClick={toggleshowmore} className='text-[--text-color] rounded-full border-2 border-black px-2 py-1'>
-        {showmore ? 'Show Less' : 'Show More'}
+        <button onClick={toggleshowmore} className='text-[--text-color] rounded-full border-2 border-black px-3 py-2'>
+        {showmore ? 'Close Menu' : 'Show More'}
         </button>
       </div>
-    )}
+    
     {showSearchDiv && (
       <div
         className='fixed top-0 left-0 flex justify-center items-center flex-col w-screen h-screen bg-gray-800 gap-4 text-white z-10 transition-all duration-500'
@@ -176,7 +176,6 @@ export default function Home() {
     )}{showmore && (
       <div
         className='fixed top-0 left-0 flex justify-center items-center flex-col w-screen h-screen bg-gray-800 gap-4 text-white z-10 transition-all duration-500'
-        // onClick={() => { toggleSearchDiv(); }}
       >
        <div className="contact ml-[-5%] flex flex-col gap-5">
         <button className="rounded-full text-lg px-4 py-2 border-2 border-[--secondary-button] hover:bg-[--secondary-button] hover:text-white transition-all duration-300 flex gap-1 justify-center items-center"><span><IoCallSharp /></span><span>Sales Office</span></button>
@@ -186,7 +185,7 @@ export default function Home() {
 
       </div>
     )}
-    <span className="fixed md:bottom-4 bottom-4 text-red-950 text-2xl bg-[--secondary-button] z-20 border-2 rounded-full right-3"><button
+    <span className="fixed md:bottom-4 bottom-2 text-red-950 text-xl bg-[--secondary-button] z-20 border-2 rounded-full right-3"><button
       onClick={toggleDarkMode}
       className="p-2"
     >

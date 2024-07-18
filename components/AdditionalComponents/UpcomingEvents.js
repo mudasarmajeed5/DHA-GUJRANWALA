@@ -8,10 +8,10 @@ const UpcomingEvents = () => {
       <div className="text-foreground">
        
 
-        <div className="relative w-full h-[85vh] overflow-hidden">
-        <div className="top-0 py-10 md:py-20">
-           <h2 className="2x:text-4xl text-2xl text-[--secondary-button] text-center font-semibold mb-4 uppercase">Upcoming Events</h2>
-          <div className="flex items-center justify-center flex-wrap gap-4 mb-2 md:mb-6">
+        <div className="relative w-full h-[85vh] lg:h-[90vh] overflow-hidden">
+        <div className="top-0 py-10 2xl:py-20 lg:py-10">
+           <h2 className="2x:text-4xl text-2xl text-[--secondary-button] text-center font-bold mb-4 uppercase">Upcoming Events</h2>
+          <div className="flex items-center text-sm justify-center flex-wrap gap-4 mb-2 md:mb-6">
             <div className="relative">
               <input
                 type="text"
