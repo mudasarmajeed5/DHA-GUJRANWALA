@@ -44,7 +44,7 @@ const UpcomingEvents = () => {
             muted
             loop
             className="w-full h-full object-cover object-center"
-            src="/EventsVideo.mp4"
+            src="/EventVideo.mp4"
           ></video></div>
         </div>
         <div className='md:mb-16 mb-6 border'></div>
