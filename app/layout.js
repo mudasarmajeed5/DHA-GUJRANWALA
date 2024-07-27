@@ -4,10 +4,11 @@ import Navbar from "@/components/Navbar";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Footer from "@/components/Footer";
+import { FaCalendarDay } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
-import { FaFacebook,FaWhatsapp } from "react-icons/fa";
+import { FaFacebook,FaWhatsapp,FaCalendarAlt} from "react-icons/fa";
 import { IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5';
 import Script from "next/script";
 export const metadata = {
@@ -21,6 +22,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         <div className="socials1">
+            <button className="bg-black p-1 hover:right-0 rounded-md md:flex hidden gap-2 text-white">
+              <span className="text-2xl hover:text-white"><FaCalendarDay /></span>
+              <a href="/BookAnAppointment" className="show-text">Meeting</a>
+            </button>
             <button className="bg-green-600 p-1 hover:right-0 rounded-md flex gap-2 text-white">
               <span className="text-2xl hover:text-white"><FaWhatsapp /></span>
               <a href="https://wa.me/92123456789" className="show-text">WhatsApp</a>

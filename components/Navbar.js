@@ -1,7 +1,8 @@
 'use client'
 import "./Navbar.css"
 import { IoIosArrowDown } from "react-icons/io";
-import { FaArrowRight, FaPhone, FaSearch } from "react-icons/fa";
+import { FaArrowRight, FaPhone } from "react-icons/fa";
+import { FaCalendarDay } from "react-icons/fa6";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { FaEarthAsia, FaMapLocationDot } from "react-icons/fa6";
@@ -48,13 +49,10 @@ const Navbar = () => {
   const router = useRouter()
   return (
     <div className='text-center bg-[--bg-color] sticky top-0 py-1 px-4 grid md:place-items-start justify-items-start place-items-start md:grid-cols-3 grid-cols-2 grid-rows-1 text-[--text-color] z-50'>
-
-
+      
       <div onClick={() => router.push('/')} className="md:text-3xl text-2xl cursor-pointer underline-offset-4 navbar-name">
         <img src="/dhalogo.png" width={150} alt="" />
       </div>
-
-
 
       <div className="md:flex ml-[-5%] place-self-center gap-0 hidden" >
         {/* Projects Dropdown */}
@@ -287,7 +285,7 @@ const Navbar = () => {
                   <RxCross2 onClick={() => setDropDown(!DropDown)} className="text-[--text-color] relative z-20" />
               ) : (
                 <span className="flex gap-1 text-[20px] text-[--secondary-button] font-extralight items-center">
-                  <FaSearch /> |
+                  <a href="/BookAnAppointment"><FaCalendarDay /> </a>|
                   <FaMapLocationDot /> |
                   <FaPhone />| 
                   <span onClick={() => setDropDown(!DropDown)} className="cursor-pointer">

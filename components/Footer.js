@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="relative block h-52 lg:col-span-2 lg:h-full overflow-hidden">
           <div className="shadow-overlay1 z-[3] relative"></div>
           <img
-            src="https://www.dreamhomes.com.pk/img/blog/dha-gujranwala-993x515.jpg"
+            src="https://www.dhagwa.com/Content/Images/DHA%20Office%20Complex.jpeg"
             alt=""
             className="absolute inset-0 h-full w-full object-cover scale-105 hover:scale-110 transition-transform duration-1000"
           />

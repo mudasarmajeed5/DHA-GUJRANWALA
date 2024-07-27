@@ -110,3 +110,24 @@ body {
 
 .mortgagecalculator {box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
+
+
+/* styles.css */
+
+.selectdate {
+  text-align: center;
+  border-radius: 50%; /* Makes it rounded */
+  width: 2.5rem; /* 10 units, adjust as needed */
+  height: 2.5rem; /* 10 units, adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Shows a pointer cursor on hover */
+  transition: all 0.3s; /* Smooth transition for all changes */
+  border: 2px solid var(--secondary-button);
+}
+
+.selectdate:hover {
+  background-color: var(--secondary-button); /* Adjust based on your CSS variable */
+  color: var(--text-color); /* Adjust based on your CSS variable */
+}
