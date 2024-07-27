@@ -38,7 +38,7 @@ const BookAnAppointment = () => {
     }, []);
     return (
         <div className='min-h-screen flex justify-center items-center text-[--text-color]'>
-            <div className="flex lg:w-3/5 mx-auto md:flex-row flex-col-reverse p-6 border-2 bg-background rounded-lg shadow-lg">
+            <div className="flex lg:w-3/5 w-[95vw] mx-auto md:flex-row flex-col-reverse p-6 border-2 bg-background rounded-lg shadow-lg">
                 <div className="flex-1 md:m-0 mt-10 md:mr-4">
                     <img
                         src="https://reinvention.vercel.app/dhalogo.png"
