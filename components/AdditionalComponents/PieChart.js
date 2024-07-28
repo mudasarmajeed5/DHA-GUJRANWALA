@@ -11,7 +11,7 @@ export default function Component() {
           </p>
         </div>
         <div className="mt-4 md:mt-0">
-          <button className="flex items-center gap-2 bg-[#191970] text-[--text-color] rounded-md px-4 py-2 font-medium">
+          <button className="flex items-center gap-2 bg-[--secondary-button] hover:opacity-90 text-[--text-color] rounded-md px-4 py-2 font-medium">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

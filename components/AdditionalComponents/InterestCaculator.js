@@ -133,7 +133,7 @@ const InterestCaculator = () => {
                         <span className="text-lg ">4.25%</span>
                         <span className="text-lg ">12 years</span>
                     </div>
-                    <button className="bg-[--download-app-green] text-[var(--text-color)] p-2 rounded-full text-2xl 2xl:text-3xl w-full">
+                    <button className="bg-[--download-app-green] hover:opacity-100 opacity-90 text-[var(--text-color)] p-2 rounded-full text-2xl 2xl:text-3xl w-full">
                         Next
                     </button>
                 </div>
