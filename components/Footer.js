@@ -1,3 +1,6 @@
+const date = new Date()
+let year = date.getFullYear()
+
 const Footer = () => {
   return (
     <>
@@ -252,7 +255,7 @@ const Footer = () => {
                 </li>
               </ul>
               <p className="mt-8 text-xs text-white sm:mt-0">
-                © 2022. Company Name. All rights reserved.
+                © 2022-{year}. Company Name. All rights reserved.
               </p>
             </div>
           </div>
